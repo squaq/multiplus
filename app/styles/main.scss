@@ -38,6 +38,14 @@ body {
   }
 }
 
+.jumbotron {
+    padding: 0;
+    margin-bottom: 0;
+    .container{
+        max-width: 800px;    
+    }
+}
+
 .navbar {
     min-height: 84px;
     margin-bottom:0;
@@ -57,15 +65,16 @@ body {
 .container-nav{
     max-width: 1000px;   
 }
-.container-body{
+/* .container-body{
     max-width: 800px;   
 }
-
+ */
 .thumbnail{
     background-color: transparent;
     border:0;
     .caption{
         padding-top: 0;
+        text-align: center;
         h3{
             font-family: 'poppinsbold';
             font-size: 18px;
@@ -73,6 +82,7 @@ body {
         p{
             font-family: 'open_sansregular';
             font-size: 11px;
+            
         }
     }
 }
@@ -89,59 +99,87 @@ body {
 }
 
 #banner{
+    background-image: url("/images/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
     height: 701px;
-    .container-body {
-        .title{
-            padding-top: 140px;
-            font-family: 'poppinssemibold';
-            color: #fff;
-            font-size: 27px;
-            max-width: 360px;
-            text-align: left;
-        }
-        p{
-            padding-top: 30px;
-            font-family: 'open_sanssemibold';
-            color: #fff;
-            font-size: 18px;
-            max-width: 400px;
-            text-align: left;
-        }
-        button{
-            margin-top: 35px;
-        }
-
+    
+    .title{
+        padding-top: 140px;
+        font-family: 'poppinssemibold';
+        color: #fff;
+        font-size: 27px;
+        max-width: 360px;
+        text-align: left;
+    }
+    p{
+        padding-top: 30px;
+        font-family: 'open_sanssemibold';
+        color: #fff;
+        font-size: 18px;
+        max-width: 400px;
+        text-align: left;
+    }
+    button{
+        margin-top: 35px;
     }
 }
-#oq_faz{
-    height: 701px;
-}
-#diferencial{
-//    height: 701px;
-    .title{
-        padding-top: 45px;
+
+#diferencial {
+    background-color: #e0e1e1;
+    height: 700px;
+    .container{
+        padding-top: 45px;    
+    }
+    
+    .title {
+        
         text-align: center;
         max-width: 710px;
         font-size: 27px;
         font-family: 'poppinslight';
         span{font-family: 'poppinssemibold';}
     }
-    .panel-default{
-        background-color: transparent;
-        .title{
+    
+    .panel{
+        background-color: #e0e1e1;
+        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    .panel-body {
+        
+        .title {
             font-family: 'poppinsregular';
             font-size: 17px;
+            line-height: 0;
         }
-        p{
+        p {
             font-family: 'open_sansregular';
             font-size: 11px;
         }
     }
-    
-    
+    .row {
+        padding-top: 30px;
+    }
+    .container {
+        .panel{
+            .container{
+                padding-top: 30px;
+                p{
+                    padding: 0;
+                    text-align: left;
+                }                
+            }
+        }
+
+    }
 }
 
-
+#oq_faz {
+    background-image: url("/images/oq-faz-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 500px;
+}
 
 
 /* Custom page footer */
@@ -155,65 +193,28 @@ body {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    margin-top: 0;
-    margin-bottom: 0;    
-    padding-top: 0;
-    padding-bottom: 0;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-    }
-}
-
-#banner { 
-    background-image: url("/images/banner-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center; 
-}
-
-#differencial{
-    background-color: #e0e1e1;
-}
-
-#oq_faz {
-    background-image: url("/images/oq-faz-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center; 
-}
 
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-//    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+//  .container {
+//    max-width: 730px;
+//  }
+//
+//  /* Remove the padding we set earlier */
+//  .header,
+//  .marketing,
+//  .footer {
+//    padding-left: 0;
+//    padding-right: 0;
+//  }
+//  /* Space out the masthead */
+//  .header {
+////    margin-bottom: 30px;
+//  }
+//  /* Remove the bottom border on the jumbotron for visual effect */
+//  .jumbotron {
+//    border-bottom: 0;
+//  }
 }
