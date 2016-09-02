@@ -4,7 +4,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 @import "1280.scss";
 
-
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -20,14 +19,15 @@ body {
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+//  padding-left: 15px;
+//  padding-right: 15px;
 }
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+//    height: 100px;
+//  border-bottom: 1px solid #e5e5e5;
+//  margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -37,6 +37,112 @@ body {
     padding-bottom: 19px;
   }
 }
+
+.navbar {
+    min-height: 84px;
+    margin-bottom:0;
+}
+
+.navbar-brand{    
+    padding: 26px 15px;    
+}
+.navbar-nav{
+    padding: 20px 15px;
+    li{
+        a{
+            font-family: 'poppinsmedium';
+        }
+    }
+}
+.container-nav{
+    max-width: 1000px;   
+}
+.container-body{
+    max-width: 800px;   
+}
+
+.thumbnail{
+    background-color: transparent;
+    border:0;
+    .caption{
+        padding-top: 0;
+        h3{
+            font-family: 'poppinsbold';
+            font-size: 18px;
+        }
+        p{
+            font-family: 'open_sansregular';
+            font-size: 11px;
+        }
+    }
+}
+
+.btn-mult{
+    font-family: 'poppinssemibold';
+    color: #fff;
+    font-size: 14px;
+    background-color: #0c599f;
+    border: 1px solid #298fce;
+    box-shadow: 0px 0px 1px 6px rgba(0, 0, 0, 0.3);
+    padding: 10px 70px;
+    border-radius: 4px;
+}
+
+#banner{
+    height: 701px;
+    .container-body {
+        .title{
+            padding-top: 140px;
+            font-family: 'poppinssemibold';
+            color: #fff;
+            font-size: 27px;
+            max-width: 360px;
+            text-align: left;
+        }
+        p{
+            padding-top: 30px;
+            font-family: 'open_sanssemibold';
+            color: #fff;
+            font-size: 18px;
+            max-width: 400px;
+            text-align: left;
+        }
+        button{
+            margin-top: 35px;
+        }
+
+    }
+}
+#oq_faz{
+    height: 701px;
+}
+#diferencial{
+//    height: 701px;
+    .title{
+        padding-top: 45px;
+        text-align: center;
+        max-width: 710px;
+        font-size: 27px;
+        font-family: 'poppinslight';
+        span{font-family: 'poppinssemibold';}
+    }
+    .panel-default{
+        background-color: transparent;
+        .title{
+            font-family: 'poppinsregular';
+            font-size: 17px;
+        }
+        p{
+            font-family: 'open_sansregular';
+            font-size: 11px;
+        }
+    }
+    
+    
+}
+
+
+
 
 /* Custom page footer */
 .footer {
@@ -51,11 +157,12 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-//    background-image: url("/images/banner-bg.jpg");
-
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
-
+    margin-top: 0;
+    margin-bottom: 0;    
+    padding-top: 0;
+    padding-bottom: 0;
     .btn {
         font-size: 21px;
         padding: 14px 24px;
@@ -103,7 +210,7 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+//    margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
