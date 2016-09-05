@@ -124,6 +124,12 @@ body {
         margin-top: 35px;
     }
 }
+.title_dest {
+    max-width: 710px;
+    font-size: 27px !important;
+    font-family: 'poppinslight';
+    span{font-family: 'poppinssemibold';}
+}
 
 #diferencial {
     background-color: #e0e1e1;
@@ -132,14 +138,15 @@ body {
         padding-top: 45px;    
     }
     
-    .title {
-        
-        text-align: center;
-        max-width: 710px;
-        font-size: 27px;
-        font-family: 'poppinslight';
-        span{font-family: 'poppinssemibold';}
-    }
+    .title_dest{text-align: center;}
+//    .title {
+//        
+//        text-align: center;
+//        max-width: 710px;
+//        font-size: 27px;
+//        font-family: 'poppinslight';
+//        span{font-family: 'poppinssemibold';}
+//    }
     
     .panel{
         background-color: #e0e1e1;
@@ -178,7 +185,74 @@ body {
     background-image: url("/images/oq-faz-bg.jpg");
     background-repeat: no-repeat;
     background-position: center; 
-    height: 500px;
+    height: 424px;
+    .title_dest{text-align: left};
+    .container{
+        padding-top: 80px;    
+    }
+    
+    .txt_body {
+        font-family: 'open_sansregular';
+        font-size: 17px;
+        max-width: 450px;
+        margin-top: 30px;
+        span{
+            font-family: 'open_sansbold';
+            
+        }
+    }
+    button{
+        margin-top: 30px;
+    }
+    
+}
+
+
+
+#planos{
+    .title_dest{
+        text-align: center;    margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .planos_thumb{
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 364px;
+        
+        p{
+            color: #fff;
+            font-family: 'open_sansregular';
+            font-size: 11px;
+            max-width: 168px;
+            margin-left: 73px;
+        }
+        .title{
+            font-family: 'poppinsbold';
+            font-size: 24px;
+            margin-top: 30px;
+        }
+    }
+    .quad_bg{
+        width: 310px;
+        height: 280px;
+        margin-top: 46px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    #planos_start{    
+        background-image: url("/images/planos-start-bg.jpg");
+        .quad_bg{
+            background-image:  url("/images/bg_start.png");  
+        }
+        
+    }
+    #planos_pro{    
+        background-image: url("/images/planos-pro-bg.jpg");
+        .quad_bg{
+            background-image:  url("/images/bg_pro.png");  
+        }
+    }
+    
 }
 
 
