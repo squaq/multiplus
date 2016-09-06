@@ -76,7 +76,7 @@
 
 <div class="jumbotron" id="planos">
     <div class="container center-block">
-        <p class="title_dest">Planos que a <span>Múltiplos</span> oferece</p>
+        <p class="title_dest center-block">Planos que a <span>Múltiplos</span> oferece</p>
     </div>
        
     <div class="container col-md-6 planos_thumb" id="planos_start">
@@ -91,15 +91,52 @@
             <p class="title">PROFISSIONAL</p>
             <p>Para quem já começou a investir,  mas quer fugir do baixo rendimento dos bancos, este é o plano ideal. Ele dá acesso à Carteira Múltiplos, que produziu um resultado de 39,3% no primeiro semestre de 2016.</p>
         </div>
-        
-
     </div>
-   
-    
 </div>
 
 
+<div class="jumbotron" id="conheca">
+    <div class="container center-block">
+        <p class="title_dest center-block">Conheça as <span>vantagens</span> de quem usa o Métodos Múltiplos.</p>
+        <div class="col-md-8">
+            <div class="col-md-12" id="vd_f">PRINCIPAL</div>
+            <div class="col-md-6" id="vd_s">SECUNDÁRIO 1</div>
+            <div class="col-md-6" id="vd_s">SECUNDÁRIO 2</div>            
+        </div>
 
+        <div class="col-md-4">    
+            <div class="col-md-12" id="txt_com">PRINCIPAL txt</div>    
+        </div>    
+    </div>
+</div>
 
+<div class="jumbotron" id="pronto">
+    <div class="container">
+        <div class="col-md-7">
+            <p class="title_dest"><span>Estou pronto(a)</span> para adiquirir o Métodos Múltiplos.</p>
+            <p>Buscaremos investimentos mais rentáveis e seguros com base na análise do seu perfil e nos seus objetivos. Preencha com seus dados e nós entraremos em contato.</p>
+        </div>
+        <div class="col-md-5">
+            <form>
+               <div class="form-group">
+                    <span class="pull-right">*campos obrigatórios.</span>
+                    <input type="text" class="form-control" placeholder="Nome*" ng-model="form.nome"  ng-focus="focus()">
+                </div>
+                <div class="form-group">
+                    <input type="text"  class="form-control" placeholder="Email*" ng-model="form.email" ng-focus="focus()">
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="Mensagem" ng-model="form.msg"/>
+                </div>
+                <div class="form-group">
+                    <label ng-show="warning">{{warning}}</label>
+                </div>
+                <button type="button" class="btn-mult" ng-click="submit()">SOLICITE SEU ORÇAMENTO</button>
+                
+            </form>
+        </div>
+
+    </div>
+</div>
 
 

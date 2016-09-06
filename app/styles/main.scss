@@ -98,6 +98,13 @@ body {
     border-radius: 4px;
 }
 
+.title_dest {
+//    max-width: 710px;
+    font-size: 27px !important;
+    font-family: 'poppinslight';
+    span{font-family: 'poppinssemibold';}
+}
+
 #banner{
     background-image: url("/images/banner-bg.jpg");
     background-repeat: no-repeat;
@@ -124,30 +131,16 @@ body {
         margin-top: 35px;
     }
 }
-.title_dest {
-    max-width: 710px;
-    font-size: 27px !important;
-    font-family: 'poppinslight';
-    span{font-family: 'poppinssemibold';}
-}
+
 
 #diferencial {
     background-color: #e0e1e1;
-    height: 700px;
+    height: 640px;
     .container{
         padding-top: 45px;    
     }
     
     .title_dest{text-align: center;}
-//    .title {
-//        
-//        text-align: center;
-//        max-width: 710px;
-//        font-size: 27px;
-//        font-family: 'poppinslight';
-//        span{font-family: 'poppinssemibold';}
-//    }
-    
     .panel{
         background-color: #e0e1e1;
         box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
@@ -195,14 +188,12 @@ body {
         font-family: 'open_sansregular';
         font-size: 17px;
         max-width: 450px;
-        margin-top: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         span{
             font-family: 'open_sansbold';
             
         }
-    }
-    button{
-        margin-top: 30px;
     }
     
 }
@@ -210,9 +201,12 @@ body {
 
 
 #planos{
+    height: 432px;
+    p{margin: 0;}
     .title_dest{
-        text-align: center;    margin-top: 40px;
-        margin-bottom: 40px;
+        text-align: center;    
+        padding-top: 40px;
+        padding-bottom: 30px;
     }
     .planos_thumb{
         background-repeat: no-repeat;
@@ -225,11 +219,12 @@ body {
             font-size: 11px;
             max-width: 168px;
             margin-left: 73px;
+            
         }
         .title{
             font-family: 'poppinsbold';
             font-size: 24px;
-            margin-top: 30px;
+            padding-top: 30px;
         }
     }
     .quad_bg{
@@ -254,6 +249,61 @@ body {
     }
     
 }
+
+#conheca {
+    background-color: #0c599f;    
+    height: 424px;
+    .title_dest{
+        text-align: center; 
+        color: #fff;
+        min-width: 780px;
+        
+        padding-top: 40px;
+        padding-bottom: 40px;
+    };
+    .container{
+        margin-top: 40px;
+        min-width: 900px
+    }
+    
+    #vd_f {
+        background-color: #000;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    #vd_s {
+        background-color: #000;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    
+    #txt_com{
+        background-color: #000;
+        color: #fff;
+        border: 1px solid #fff;
+        height: 100px;
+    }
+//    .txt_body {
+//        font-family: 'open_sansregular';
+//        font-size: 17px;
+//        max-width: 450px;
+//        margin-top: 30px;
+//        span{
+//            font-family: 'open_sansbold';
+//            
+//        }
+//    }
+    
+    
+}
+#pronto{
+    .container{
+        margin-top: 40px;
+        min-width: 900px
+    }
+    
+}
+    
 
 
 /* Custom page footer */
