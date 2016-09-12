@@ -2,7 +2,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import "1280.scss";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -120,6 +119,7 @@ body {
         font-size: 18px;
         max-width: 400px;
         text-align: left;
+        float: left;
     }
     
     .title{
@@ -129,11 +129,14 @@ body {
         font-size: $ftitlesize;
         max-width: 360px;
         text-align: left;
+        float: left;
     }
     
     button{
         margin-top: 35px;
+        float: left;
     }
+    
 }
 
 
@@ -273,26 +276,37 @@ body {
     }
     
     #vd_f {
-        background-color: #fff;
-        color: #fff;
-        border: 1px solid #fff;
-        background-image: url("http://img.youtube.com/vi/6jU1Hg6-7xI/0.jpg");
+//        background-color: #fff;
+//        color: #fff;
+//        border: 1px solid #fff;
+//        background-image: url("http://img.youtube.com/vi/6jU1Hg6-7xI/0.jpg");
         height: 300px;
+//        position: relative;
+//        display: inline-block;
+//        margin:5px;
+        *position:absolute;
     }
     #vd_s {
-        background-color: #000;
-        color: #fff;
-        border: 1px solid #fff;
+        padding-top: 15px;
+//        background-color: #000;
+//        color: #fff;
+//        border: 1px solid #fff;
     }
     
     #txt_com{
-        background-color: #000;
+//        background-color: #000;
         color: #fff;
         border: 1px solid #fff;
         height: 100px;
     }
     
     
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
 #pronto{
@@ -341,3 +355,6 @@ body {
 //    border-bottom: 0;
 //  }
 }
+
+@import "1280.scss";
+@import "320.scss";
