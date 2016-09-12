@@ -22,19 +22,19 @@ angular.module('multiplusApp')
 //            send message
             console.log($scope.form, 'time to send message');
         }
-    }
+    };
     
     $scope.focus = function(){
         $scope.warning = false;
-    }
+    };
     
     function validForm(){
         if($scope.form.nome.length === 0 || !$scope.form.nome.trim()){
-            return '*preencha o campo nome.'
+            return '*preencha o campo nome.';
         }
         
         if($scope.form.email.length === 0 || !/\S+@\S+\.\S+/.test($scope.form.email)){
-            return '*digite um email válido.'
+            return '*digite um email válido.';
         }
         
         return false;
