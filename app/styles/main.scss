@@ -77,14 +77,16 @@ body {
     .caption{
         padding-top: 0;
         text-align: center;
+        
         h3{
             font-family: 'poppinsbold';
             font-size: 18px;
+            color: #102c42;
         }
         p{
             font-family: 'open_sansregular';
             font-size: 13px;
-            
+            color: #424445;
         }
     }
 }
@@ -105,10 +107,13 @@ body {
     span{font-family: 'poppinssemibold';}
 }
 
+.left50{float:left; width:50%;}
+
+
 #banner{
     background-image: url("/images/banner-bg.jpg");
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center center; 
     height: 701px;
     
     
@@ -143,6 +148,7 @@ body {
 #diferencial {
     background-color: #e0e1e1;
     height: 640px;
+    color: #102c42;
     .container{
         padding-top: 45px;    
     }
@@ -158,10 +164,12 @@ body {
             font-family: 'poppinsregular';
             font-size: 17px;
             line-height: 0;
+            color: #424445;
         }
         p {
             font-family: 'open_sansregular';
             font-size: 11px;
+            color: #424445;
         }
     }
     .row {
@@ -184,13 +192,13 @@ body {
 #oq_faz {
     background-image: url("/images/oq-faz-bg.jpg");
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center center; 
     height: 424px;
     .title_dest{text-align: left; font-size: $ftitlesize;}
     .container{
         padding-top: 80px;    
     }
-    
+    color: #102c42;
     .txt_body {
         font-family: 'open_sansregular';
         font-size: 17px;
@@ -357,4 +365,6 @@ body {
 }
 
 @import "1280.scss";
+@import "640.scss";
+@import "480.scss";
 @import "320.scss";
