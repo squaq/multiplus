@@ -207,41 +207,85 @@
     
     #planos{
         .title_dest{font-size: $ftitlesize -2px;}
-        
+        height: 910px;
         #quad_bg{
             width: 100%;
             height: 180px;
-            background-color: #0075be;
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 52% 100%, 50% 94%, 48% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 52% 100%, 50% 94%, 48% 100%, 0 100%);
             text-align: center;
             color: white;
             .container{ 
-                padding-top: 40px;
-                max-width: 530px; 
+//                max-width: 530px; 
             }
             p{
                 font-family: 'open_sansregular';
                 font-size: 16px;
-
             }
             .title{
                 font-family: 'poppinsbold';
                 font-size: $ftitlesize - 2px;
             }
-            
         }
         
-        #start_bg{
-            background-image: url("/images/planos-start-bg.jpg");
+        #bg_img_planos{
             background-size: cover;
             height: 252px; 
             margin-top: -11px;
-            
-//            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 62% 100%, 52% 88%, 42% 100%, 0 100%);
-//            clip-path: polygon(0 0, 100% 0, 100% 100%, 62% 100%, 52% 88%, 42% 100%, 0 100%);
         }
+        
+        .start_bg{background-image: url("/images/planos-start-bg-640.jpg");}
+        .pro_bg{background-image: url("/images/planos-pro-bg-640.jpg");}
+        
+        
+        .quad_start {
+            background-color: #0075be;
+            .container { 
+                padding-top: 40px;
+                max-width: 530px; 
+            }
+        } 
+        .quad_pro {
+            background-color: #00396d;
+            .container { 
+                padding-top: 30px;
+                max-width: 580px; 
+            }
+        }
+        
+        .pro_bg {
+            background-image: url("/images/planos-pro-bg.jpg");
+        }
+        
     }
     
+    #conheca {
+        height: 952px;
+        .container{
+            margin-top: 0px;
+            max-width: 630px;
+            .title_dest{
+                font-size: $ftitlesize;
+                max-width: $maxsizetxt + 100px;
+            }
+            #vd_f{
+                img{ padding-top: 132px;}
+            }
+            
+            #vd_s{
+                margin-top: 20px;
+                img{ padding-top: 42px;}
+            }
+            
+            #txt_com {
+                margin-top: 20px;
+            }
+            
+        }
+        
+    }
     
+    #pronto{
+        .container{max-width: 100%}
+    }
 }
