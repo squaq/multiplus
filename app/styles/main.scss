@@ -375,8 +375,23 @@ body {
 
 #pronto{
     .container{
-        margin-top: 40px;
-        min-width: 900px
+//        margin-top: 40px;
+        max-width: 900px
+    }
+    p{
+        color: #102c42;
+        font-family: 'open_sansregular';
+        font-size: 18px;
+    }
+    .title_dest{
+        font-size: 30px;
+        font-family: 'poppinslight';
+        span{
+            font-family: 'poppinssemibold';
+        }
+        span.aspas{
+             font-size: 22px;   
+        }
     }
     
 }
