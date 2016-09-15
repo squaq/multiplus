@@ -131,26 +131,26 @@
 </div>
 
 
-<div class="jumbotron" id="conheca">
+<div class="jumbotron" id="conheca" ng-init="settingVantagensVds()">
     <div class="container center-block">
         <p class="title_dest center-block">Conheça as <span>vantagens</span> de quem usa o Métodos Múltiplos.</p>
 
         <div class="col-md-8 col-xs-12">
             <div class="col-md-12 col-xs-12">
-                <div class="container" id="vd_f">
+                <div class="container" id="vd_f" ng-click="callVd(vantagens.vdId1)">
                     <img src="images/play.png" alt="" class="imgPlay center-block">
                 </div>
            
             </div>
             <div class="col-md-5 col-xs-6">
-               <div class="container vd2" id="vd_s">
+               <div class="container vd2" id="vd_s" ng-click="callVd(vantagens.vdId2)">
                     <img src="images/play.png" alt="" class="imgPlay center-block">   
                </div>
                 
             </div>
 <!--            <div class="col-md-2 col-xs-2"></div>-->
             <div class="col-md-5 col-xs-6 " >
-               <div class="container vd3" id="vd_s">
+               <div class="container vd3" id="vd_s" ng-click="callVd(vantagens.vdId3)">
                      <img src="images/play.png" alt="" class="imgPlay center-block">  
                </div>
                  
@@ -161,9 +161,23 @@
             <div class="container">
                 <div id="txt_com">
                     <p class="col-md-2 col-xs-2 title_dest">“</p>
-                    <p class="col-md-10  col-xs-10 txt">Depois que conheci a Múltiplos, percebi que tinha perdido muito tempo na minha vida financeira. Esse encontro deveria ter acontecido há dez anos.<span>”</span>
-                    </p>    
-                </div>  
+                    <div class="col-md-10  col-xs-10 txt">{{vantagens.txt}}<span>”</span>
+                        <hr>
+                        <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="{{vantagens.thumb}}" alt="...">
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">{{vantagens.altor}}</h4>
+                            <p>{{vantagens.prof}}</p>
+                          </div>
+                        </div>
+                    </div>
+                        
+                </div>
+                 
                 
             </div>    
         </div>    

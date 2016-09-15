@@ -15,6 +15,19 @@ angular.module('multiplusApp')
     $scope.form.msg = '';
     $scope.warning = false;
     
+    $scope.vantagens = {};
+    
+    
+    $scope.vantagens.txt = "Depois que conheci a Múltiplos, percebi que tinha perdido muito tempo na minha vida financeira. Esse encontro deveria ter acontecido há dez anos.";
+    $scope.vantagens.thumb = "images/avatarEx.jpg";
+    $scope.vantagens.altor = "Angelinne Gomes";
+    $scope.vantagens.prof = "Profissional Liberal";
+    
+    $scope.vantagens.vdId1 = "6jU1Hg6-7xI";
+    $scope.vantagens.vdId2 = "MQJzE8qM8Fs";
+    $scope.vantagens.vdId3 = "nRYeswbOoRw";
+    
+    
     $scope.submit = function(){
         
         $scope.warning = validForm();
@@ -39,4 +52,16 @@ angular.module('multiplusApp')
         
         return false;
     }
+    
+    $scope.settingVantagensVds = function(){
+        angular.element("#vd_f").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId1+"/0.jpg)");
+        angular.element(".vd2").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId2+"/0.jpg)");
+        angular.element(".vd3").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId3+"/0.jpg)");
+    }
+    
+    $scope.callVd = function(vdId){
+        console.log("call vd",vdId)
+    }
+    
+    
   });
