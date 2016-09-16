@@ -191,10 +191,10 @@
             <p class="center-block">Buscaremos investimentos mais rentáveis e seguros com base na análise do seu perfil e nos seus objetivos. Preencha com seus dados e nós entraremos em contato.</p>
         </div>
         <div class="col-md-5">
-            <form class="center-block">
+            <form class="center-block"  ng-show="!sentEmail">
                <div class="form-group" id="formNome">
                     <span class="pull-right">*campos obrigatórios.</span>
-                    <p class="wtxt" ng-show="warningNome" style="margin-top: 40px;">Digite seu nome</p>
+                    <p class="wtxt" ng-show="warningNome" id="wtxtNome">Digite seu nome</p>
                     <input type="text" class="form-control" placeholder="Nome*" ng-model="form.nome"  ng-focus="focus()">
                 </div>
                 <div class="form-group" id="formEmail"><!--has-error-->
@@ -214,7 +214,15 @@
 <!--                        {{warning}}-->
                     </label>
                 </div>
+                
             </form>
+            <div class="container" ng-show="sentEmail">
+                    <div class="container center-block" id="msgEnviado">
+                        <p class="title">RECEBEMOS SUAS INFORMAÇÕES.</p>
+                        <p>Em breve entraremos em contato.</p>
+                    </div>
+                   <button type="button" class="btn-mult center-block" ng-click="novoOrcamento()">SOLICITE NOVO ORÇAMENTO</button> 
+            </div>
         </div>
 
     </div>

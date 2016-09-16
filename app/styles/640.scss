@@ -312,13 +312,9 @@
             
             textarea[type="text"], input[type="text"]{
                 font-size: 16px;
-                font-family: 'open_sanssemibold';
-                color: #424445;
             }
             span {
                 font-size: 12px;
-                font-family: 'open_sanssemibold';
-                color: #737679;
                 padding-bottom: 10px;
             }
             textarea[type="text"]{height: 75px; margin-bottom: 25px; }
@@ -328,7 +324,15 @@
             
             .wtxt{width: 340px;}
             
-            
+        }
+        #msgEnviado {
+            width: 360px;
+            p {
+                font-size: 18px;
+            }
+            .title {
+                font-size: 25px;
+            }
         }
     }
 }

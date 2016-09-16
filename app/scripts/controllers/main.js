@@ -8,12 +8,13 @@
  * Controller of the multiplusApp
  */
 angular.module('multiplusApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $location, anchorSmoothScroll) {
     $scope.form = {};
     $scope.form.nome = '';
     $scope.form.email = '';
     $scope.form.msg = '';
     $scope.warning = false;
+    $scope.sentEmail = false;
     
     $scope.vantagens = {};
     
@@ -37,6 +38,13 @@ angular.module('multiplusApp')
         }
     };
     
+    $scope.novoOrcamento = function(){
+        $scope.warning = $scope.sentEmail = false;
+        $scope.form.nome = '';
+        $scope.form.email = '';
+        $scope.form.msg = '';
+    }
+    
     $scope.focus = function(){
         $scope.warning = false;
         $scope.warningNome = false;
@@ -44,7 +52,6 @@ angular.module('multiplusApp')
     };
     
     function validForm(){
-        
         angular.element('#formNome').removeClass('has-error');
         angular.element('#formEmail').removeClass('has-error');
         if($scope.form.nome.length === 0 || !$scope.form.nome.trim()){
@@ -58,7 +65,7 @@ angular.module('multiplusApp')
             $scope.warningEmail = true;
             return '*digite um email válido.';
         }
-        
+        $scope.sentEmail = true;
         return false;
     }
     
@@ -72,5 +79,17 @@ angular.module('multiplusApp')
         console.log("call vd",vdId)
     }
     
-    
+    $scope.go = function(p){
+        $location.path(p);
+    }
+    $scope.$watch(function () {
+        return location.hash;
+    }, function (value) {
+        
+        anchorSmoothScroll.scrollTo(value.substr(2));
+        if (angular.element(".navbar-collapse").hasClass("in")) {
+            angular.element('[data-toggle="collapse"]').click();
+        }
+//       $anchorScroll(value.substr(2));
+    });
   });
