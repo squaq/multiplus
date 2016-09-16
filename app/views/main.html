@@ -192,21 +192,28 @@
         </div>
         <div class="col-md-5">
             <form class="center-block">
-               <div class="form-group">
+               <div class="form-group" id="formNome">
                     <span class="pull-right">*campos obrigatórios.</span>
+                    <p class="wtxt" ng-show="warningNome" style="margin-top: 40px;">Digite seu nome</p>
                     <input type="text" class="form-control" placeholder="Nome*" ng-model="form.nome"  ng-focus="focus()">
                 </div>
-                <div class="form-group"><!--has-error-->
+                <div class="form-group" id="formEmail"><!--has-error-->
+                    <p class="wtxt" ng-show="warningEmail">Digite corretamente seu email</p><!--<i class="glyphicon glyphicon-remove-sign"></i>-->
                     <input type="text"  class="form-control" placeholder="Email*" ng-model="form.email" ng-focus="focus()">
                 </div>
                 <div class="form-group">
                     <textarea type="text" class="form-control" placeholder="Mensagem" ng-model="form.msg"/>
                 </div>
-                <div class="form-group">
-                    <label ng-show="warning">{{warning}}</label>
-                </div>
-                <button type="button" class="btn-mult center-block" ng-click="submit()">SOLICITE SEU ORÇAMENTO</button>
                 
+                <button type="button" class="btn-mult center-block" ng-click="submit()">SOLICITE SEU ORÇAMENTO</button>
+                <div class="form-group">
+                    
+                    <label class="warning center-block" ng-show="warning">
+                        <p class="title">NÃO ENVIADO</p>
+                        <p>Por favor, revise os campos acima.</p>
+<!--                        {{warning}}-->
+                    </label>
+                </div>
             </form>
         </div>
 

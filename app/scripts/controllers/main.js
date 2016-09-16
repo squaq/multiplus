@@ -39,14 +39,23 @@ angular.module('multiplusApp')
     
     $scope.focus = function(){
         $scope.warning = false;
+        $scope.warningNome = false;
+        $scope.warningEmail = false;
     };
     
     function validForm(){
+        
+        angular.element('#formNome').removeClass('has-error');
+        angular.element('#formEmail').removeClass('has-error');
         if($scope.form.nome.length === 0 || !$scope.form.nome.trim()){
+            angular.element('#formNome').addClass('has-error');
+            $scope.warningNome = true;
             return '*preencha o campo nome.';
         }
         
         if($scope.form.email.length === 0 || !/\S+@\S+\.\S+/.test($scope.form.email)){
+            angular.element('#formEmail').addClass('has-error');
+            $scope.warningEmail = true;
             return '*digite um email válido.';
         }
         

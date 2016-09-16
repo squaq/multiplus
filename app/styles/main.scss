@@ -393,7 +393,34 @@ body {
              font-size: 22px;   
         }
     }
-    
+    form{
+        .wtxt{
+            font-family: 'open_sanssemibold';
+            color: #9d1d20;
+            font-size: 16px;
+            position: absolute;
+            margin-top: 12px;
+            margin-left: 12px;
+            background: #fff;
+            pointer-events : none;
+            text-align: left;
+        }
+        
+        label {
+            p{
+                text-align: center;
+                color: #9d1d20;
+                font-family: 'open_sansregular';
+                font-size: 14px;
+                line-height: 1px;
+                
+            }
+            .title{
+                font-family: 'open_sansbold';
+                padding-top: 20px;
+            }
+        }
+    }
 }
     
 
