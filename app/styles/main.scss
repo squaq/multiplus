@@ -184,7 +184,7 @@ form{
 
 
 #inicio{
-    background-image: url("/images/banner-bg.jpg");
+    background-image: url("/teste/images/banner-bg.jpg");
     .container{max-width: $containerWidth;}
     height: 701px;
     
@@ -271,7 +271,7 @@ form{
 }
 
 #oq_faz {
-    background-image: url("/images/oq-faz-bg.jpg");
+    background-image: url("/teste/images/oq-faz-bg.jpg");
     height: 424px;
     .title_dest{text-align: left; font-size:$ftitlesize; }
     .container{
@@ -338,26 +338,26 @@ form{
         
     }
     #planos_start {    
-        background-image: url("/images/planos-start-bg.jpg");
+        background-image: url("/teste/images/planos-start-bg.jpg");
         .quad_bg{
             background-color: #0075be;
             -webkit-clip-path: polygon(0 0, 0 45%, 5% 50%, 0 55%, 0 100%, 100% 100%, 100% 0%);
             -moz-clip-path: polygon(0 0, 0 45%, 5% 50%, 0 55%, 0 100%, 100% 100%, 100% 0%);
             clip-path: polygon(0 0, 0 45%, 5% 50%, 0 55%, 0 100%, 100% 100%, 100% 0%);
-//            background-image:  url("/images/bg_start.png");  
+//            background-image:  url("/teste/images/bg_start.png");  
         }
         
     }
     #planos_pro{ 
         
-        background-image: url("/images/planos-pro-bg.jpg");
+        background-image: url("/teste/images/planos-pro-bg.jpg");
         .quad_bg{
             background-color: #00396d;
             -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 55%, 95% 50%, 100% 45%, 100% 0);
             -moz-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 55%, 95% 50%, 100% 45%, 100% 0);
             clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 55%, 95% 50%, 100% 45%, 100% 0);
             
-//            background-image:  url("/images/bg_pro.png");  
+//            background-image:  url("/teste/images/bg_pro.png");  
         }
     }
     
@@ -472,7 +472,7 @@ form{
 }
 
 #contato{
-//    background-image: url("/images/pronto-bg.jpg");
+//    background-image: url("/teste/images/pronto-bg.jpg");
     .container{
         padding-top: 60px;
         padding-bottom: 60px;
@@ -570,8 +570,8 @@ form{
 .footer {
     .container{max-width: $containerWidth;}
 //    background-color: #cdcdcd;
-    background-image: url("/images/footer-pattern.jpg");
-//    background-image: url("/images/pronto-bg.jpg");
+    background-image: url("/teste/images/footer-pattern.jpg");
+//    background-image: url("/teste/images/pronto-bg.jpg");
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #FFF;

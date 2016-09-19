@@ -8,7 +8,7 @@
  * Controller of the multiplusApp
  */
 angular.module('multiplusApp')
-  .controller('MainCtrl', function ($scope, $location, anchorSmoothScroll, $window, $uibModal) {
+  .controller('MainCtrl', function ($scope, $location, anchorSmoothScroll, $window, $uibModal, $http) {
     $scope.form = {};
     $scope.form.nome = '';
     $scope.form.email = '';
@@ -29,22 +29,22 @@ angular.module('multiplusApp')
     $scope.vantagens.vdId3 = "nRYeswbOoRw";
         
     
-    $uibModal.open({
-            animation: true,
-            templateUrl: 'views/modal.html',
-            controller: 'ModalCtrl'
-//        ,
-//            size: 'lg',
-//            resolve: {
-//                moldes: function () {
-//                  return $rootScope.moldes;
-//                }
-//            }
-    }).result.then(function (selectedItem) {
-        console.log('selectedItem', selectedItem);
-    }, function () {
-      console.log('Modal dismissed at: ' + new Date());
-    });
+//    $uibModal.open({
+//            animation: true,
+//            templateUrl: 'views/modal.html',
+//            controller: 'ModalCtrl'
+////        ,
+////            size: 'lg',
+////            resolve: {
+////                moldes: function () {
+////                  return $rootScope.moldes;
+////                }
+////            }
+//    }).result.then(function (selectedItem) {
+//        console.log('selectedItem', selectedItem);
+//    }, function () {
+//      console.log('Modal dismissed at: ' + new Date());
+//    });
     
     
     
@@ -55,7 +55,22 @@ angular.module('multiplusApp')
         $scope.warning = validForm();
         if(!$scope.warning){
 //            send message
-            console.log($scope.form, 'time to send message');
+            var url = "http://localhost/multi/email.php?email="+$scope.form.email+"&nome="+$scope.form.nome+"&msg="+$scope.form.msg;
+            $http.post(url, {}, {
+                headers : {
+                    'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+                } 
+            }).then(function(data) {
+                if (data.errors) {
+                  // Showing errors.
+                    console.log('errors', data.errors);
+
+                } else {
+                  $scope.message = data.message;
+                    console.log('success', data.message);
+                }
+            }, function(error){console.log('error', error);});
+//            console.log($scope.form, 'time to send message');
         }
     };
     
@@ -64,7 +79,7 @@ angular.module('multiplusApp')
         $scope.form.nome = '';
         $scope.form.email = '';
         $scope.form.msg = '';
-    }
+    };
     
     $scope.focus = function(){
         $scope.warning = false;
@@ -94,21 +109,21 @@ angular.module('multiplusApp')
         angular.element("#vd_f").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId1+"/0.jpg)");
         angular.element(".vd2").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId2+"/0.jpg)");
         angular.element(".vd3").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId3+"/0.jpg)");
-    }
+    };
     
     $scope.callVd = function(vdId){
-        console.log("call vd",vdId)
+//        console.log("call vd",vdId);
         $scope.openUrl("https://www.youtube.com/watch?v="+vdId+"&autoplay=1");
-    }
+    };
     
     $scope.openUrl = function(url){
         $window.open(url, '_blank');
         
-    }
+    };
     
     $scope.go = function(p){
         $location.path(p);
-    }
+    };
     
     $scope.$watch(function () {
         return location.hash;

@@ -39,12 +39,12 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
                   $scope.message = data.message;
                     console.log('success', data.message);
                 }
-            }, function(error){console.log('error', error)});
+            }, function(error){console.log('error', error);});
 //            send message
 //            console.log($scope.form, 'time to send message');
         }
 //       "https://leadlovers.com/Pages/Index/64358"
-   }
+   };
    
    $scope.focus = function(){
         $scope.warning = false;

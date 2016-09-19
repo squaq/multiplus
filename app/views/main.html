@@ -16,7 +16,7 @@
         <div class="row container center-block">
             
                 <div class="thumbnail col-md-3 col-xs-6">
-                    <img src="/images/conflitos-icon.png" alt="...">
+                    <img src="/teste/images/conflitos-icon.png" alt="...">
                     <div class="caption">
                         <h3>Sem conflitos de interesse</h3>
                         <p>Nossas recomendações são focadas exclusivamente nos seus interesses. Não recebemos comissões de bancos, corretoras ou de empresas que recomendamos.</p>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="thumbnail col-md-3 col-xs-6">
-                    <img src="/images/economia-icon.png" alt="...">
+                    <img src="/teste/images/economia-icon.png" alt="...">
                     <div class="caption">
                         <h3>Economia de tempo</h3>
                         <p>Você quer investir e não tem tempo de analisar melhores opções de investimentos? Nós encontramos a melhor opção e você ganha mais tempo para curtir a vida.</p>
@@ -33,7 +33,7 @@
                 </div>
                 
                 <div class="thumbnail col-md-3 col-xs-6">
-                    <img src="/images/confianca-icon.png" alt="...">
+                    <img src="/teste/images/confianca-icon.png" alt="...">
                     <div class="caption">
                         <h3>Confiança</h3>
                         <p>Somos adeptos do "Investimento em Valor", o método mais bem sucedido da história, testado durante 80 anos por grandes investidores, como Benjamin Graham, Warren Buffet e Walter Schloss. </p>
@@ -42,7 +42,7 @@
                 </div>
                 
                 <div class="thumbnail col-md-3 col-xs-6">
-                    <img src="/images/independencia-icon.png" alt="...">
+                    <img src="/teste/images/independencia-icon.png" alt="...">
                     <div class="caption">
                         <h3>Independência financeira</h3>
                         <p>Se aposentar 10 anos mais cedo e mudar seu estilo de vida. Já imaginou? Nós mostramos que é possível.</p>
@@ -223,7 +223,10 @@
                     <textarea type="text" class="form-control" placeholder="Mensagem" ng-model="form.msg" rows="3"/>
                 </div>
                 
-                <button type="button" class="btn-mult center-block" ng-click="submit()">SOLICITE SEU ORÇAMENTO</button>
+                <div class="form-group">
+                    <button type="button" class="btn-mult center-block" ng-click="submit()">SOLICITE SEU ORÇAMENTO</button>
+                </div>
+                
                 <div class="form-group">
                     
                     <label class="warning center-block" ng-show="warning">
@@ -233,6 +236,7 @@
                 </div>
                 
             </form>
+            
             <div class="container" ng-show="sentEmail">
                     <div class="container center-block" id="msgEnviado">
                         <p class="title">RECEBEMOS SUAS INFORMAÇÕES.</p>
