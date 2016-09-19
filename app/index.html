@@ -39,12 +39,12 @@
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#banner">INÍCIO</a></li>
-              <li><a  href="#planos">PRODUTOS</a></li>
-              <li><a href="#/">BLOG</a></li>
-              <li><a href="#conheca">SOBRE</a></li>
-              <li><a href="#pronto">CONTATO</a></li>
-              <li><a href="#/">LOGIN</a></li><!--Poppins Medium 13.5-->
+              <li><a href="#inicio">INÍCIO</a></li>
+              <li><a  href="#produtos">PRODUTOS</a></li>
+              <li><a href="http://multiplosinvestimentos.com.br/blog">BLOG</a></li>
+              <li><a href="#sobre">SOBRE</a></li>
+              <li><a href="#contato">CONTATO</a></li>
+              <li><a href="http://analisemutiplos.leadlovers.com">LOGIN</a></li>
             </ul>
           </div>
         </div>
@@ -56,9 +56,38 @@
     </div>
 
     <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
+        <div class="container info-lg">
+                <img class="col-lg-2 col-md-2 col-xs-3" src="images/logo-roda.png" alt="">
+                
+                <div class="contatos  col-lg-6 col-md-6  col-xs-12">
+                    <p class="col-lg-6 col-md-6  col-xs-4">Telefone Email Facebook</p>    
+                    <p class="col-lg-6 col-md-6  col-xs-4" id="add">+55 81 99917-2871 contato@multiplosinvestimentos.com.br <a href="http://fb.com/multiplosinvestimentos">/multiplosinvestimentos</a></p>
+                </div>
+                <div class="links col-lg-4 col-md-4">
+                    <p id="add"><a href="">Termos de Uso</a>
+                    <span class="">|</span>
+                    <a href="">Privacidade</a>
+                    <span class="">|</span>       
+                    <a href="">FAQ</a></p>
+                </div>
+                <div class="roda col-lg-12 col-md-12">Copyright Múltiplos Investimentos. 2016. Todos os direitos Reservados.</div>
+        </div>
+        
+        <div class="container info-xs center-block">
+            <div class="links center-block">
+                <p id="add"><a href="">Termos de Uso</a>
+                    <span class="">|</span>
+                    <a href="">Privacidade</a>
+                    <span class="">|</span>       
+                    <a href="">FAQ</a></p>
+            </div>
+            <div class="contatos center-block"> 
+                <p><a href="tel:5581999172871">Telefone: +55 81 99917-2871</a></p>
+                <p><a>Email: contato@multiplosinvestimentos.com.br</a></p>
+                <p><a href="http://fb.com/multiplosinvestimentos">Facebook: /multiplosinvestimentos</a></p>
+           </div>
+            <div class="roda center-block"><p>Copyright Múltiplos Investimentos. 2016. Todos os direitos Reservados.</p></div>
+        </div>
     </div>
 
 
@@ -81,12 +110,16 @@
     <script src="bower_components/ng-ScrollSpy.js/src/ng-ScrollSpy.js"></script>
     <script src="bower_components/angular-strap/dist/angular-strap.js"></script>
     <script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/modalctrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

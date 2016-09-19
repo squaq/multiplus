@@ -9,13 +9,10 @@
  * Main module of the application.
  */
 angular
-  .module('multiplusApp', [])
+  .module('multiplusApp', ['ui.bootstrap'])
     .run(function(){
     angular.element(document).ready(function(){
-        
-        
         angular.element(".navbar-toggle").on("click", function () {
-//                  console.log('clicou')
 				    angular.element(this).toggleClass("active");
 			  });
     })
@@ -26,7 +23,6 @@ angular
 
         // This scrolling function 
         // is from http://www.itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
-        
         var startY = currentYPosition();
         var stopY = elmYPosition(eID);
         var distance = stopY > startY ? stopY - startY : startY - stopY;
@@ -51,7 +47,10 @@ angular
         
         function currentYPosition() {
             // Firefox, Chrome, Opera, Safari
-            if (self.pageYOffset) return self.pageYOffset;
+            if (self.pageYOffset) 
+            {
+                return self.pageYOffset;
+            }
             // Internet Explorer 6 - standards mode
             if (document.documentElement && document.documentElement.scrollTop)
                 return document.documentElement.scrollTop;
@@ -61,24 +60,18 @@ angular
         }
         
         function elmYPosition(eID) {
-            var elm = document.getElementById(eID);
-            var y = elm.offsetTop;
-            var node = elm;
-            while (node.offsetParent && node.offsetParent != document.body) {
-                node = node.offsetParent;
-                y += node.offsetTop;
-            } return y;
+            try{
+                var elm = document.getElementById(eID);
+                var y = elm.offsetTop;
+                var node = elm;
+                while (node.offsetParent && node.offsetParent != document.body) {
+                    node = node.offsetParent;
+                    y += node.offsetTop;
+                } return y;                
+            }catch(e){}
+
         }
 
     };
     
 });
-
-;
-//    angular.document.ready(function () {
-//			  $(".navbar-toggle").on("click", function () {
-//                  console.log('clicou')
-//				    $(this).toggleClass("active");
-//			  });
-//		});
-//};

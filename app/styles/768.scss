@@ -1,0 +1,175 @@
+@media only screen and (max-width: 1023px) {
+    $ftitlesize: 30px;
+    $maxsizetxt:400px;
+    $mTopBody: 72px;
+    $containerWidth: 730px;
+    
+    body {
+        margin-top: $mTopBody;
+    }
+    
+    .navbar {
+        min-height: $mTopBody;
+        margin-bottom:0;
+    }
+    
+    .navbar-brand{    
+        padding: 19px 12px;
+        img{width: 170px;}
+    }
+    
+    .navbar-nav {
+        padding: 10px 15px;
+    }
+    .container-nav{
+        max-width: $containerWidth;   
+    }
+    
+    .thumbnail{
+        max-width: 300px;
+        margin: 10px 0px 0px 50px;
+        padding: 10px 0px 10px 0px;
+        left: -40px;
+//        
+        img{
+            max-width: 70px;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+        }
+        .caption{
+            text-align: left;
+            margin: 0px;
+            padding: 0px;
+            max-width: 200px;
+            float: right;
+            margin-right: 20px;
+            p { width:260px; }
+            h3{ 
+                font-size: 20px;
+                margin-top: 0px;
+            }
+        }
+    }
+    
+    #inicio {
+        height: 476px;
+        .container{max-width: $containerWidth;}
+        p {
+            font-size: 20px;
+            max-width: 440px;
+        }
+        .title{
+            padding-top: 90px;
+        }
+    }
+    
+    #diferencial{
+        height: 830px;
+        .container {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            max-width: 730px;
+        }
+        .title_dest{
+            max-width: 650px;    
+        }
+        .panel-body{
+            padding: 0; 
+            .media-object{
+                padding-top: 0px;
+            }
+            
+            p {
+                max-width: 480px;
+                font-size: 14px;
+            }
+            .media-heading{
+                font-size: 22px;
+                margin-top: 0px;
+                max-width: 400px;
+            }
+            .media-object{
+                margin-left: 70px;
+            }
+        }
+        
+    }
+    
+    #oq_faz {
+        .container{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            max-width: $containerWidth;
+        }
+        .title_dest{font-size: $ftitlesize + 4px;}
+        .txt_body {
+            max-width: 500px;
+        }
+        .btn-mult{
+            padding: 12px 35px;
+        }
+    }
+    #produtos{
+        height: 430px;
+        .title_dest{font-size: $ftitlesize + 4px;}
+    }
+    
+    #sobre {
+        height: 1024px;
+        .title_dest{
+            font-size: $ftitlesize + 2px;
+        }
+        .container{
+            max-width: $containerWidth;
+            padding-bottom: 40px;
+        }
+        #txt_com{
+            max-width: 640px;
+            margin-top: 20px;
+            height: 280px;
+            padding: 15px 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            div.txt{
+                max-width: 400px;
+                padding-top: 20px;
+                hr{margin-top: 20px}
+            }
+            .title_dest {
+                text-align: right;
+                padding-top: 75px;
+                left: 60px;
+            }
+            
+        }
+    }
+    
+    #contato{
+         .container{
+            max-width: $containerWidth;
+        }
+        p{
+            text-align: center;
+        }
+        
+        .title_dest{
+            font-size: $ftitlesize + 2px;
+            text-align: center;
+            max-width: 500px;
+
+        }
+    }
+    
+    .footer{
+        .contatos{
+            padding: 20px 0px 5px 0;
+        }
+        .links{
+            position: absolute;
+            right: 100px;
+        }
+        .roda{text-align: center;}
+    }
+}

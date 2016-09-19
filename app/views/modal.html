@@ -1,0 +1,36 @@
+<div class="modal-header">
+    <h3 class="modal-title">Carregue as molduras da campanha</h3>
+</div>
+
+
+<div class="modal-body">
+   <form class="center-block"  ng-show="!sentEmail">
+       <div class="form-group formNome" id="formNome">
+            <span class="pull-right">*campos obrigatórios.</span>
+            <p class="wtxt" ng-show="warningNome" id="wtxtNome">Digite seu nome</p>
+            <input type="text" class="form-control" placeholder="Nome*" ng-model="form.nome"  ng-focus="focus()">
+        </div>
+        <div class="form-group formEmail" id="formEmail"><!--has-error-->
+            <p class="wtxt" ng-show="warningEmail">Digite corretamente seu email</p><!--<i class="glyphicon glyphicon-remove-sign"></i>-->
+            <input type="text"  class="form-control" placeholder="Email*" ng-model="form.email" ng-focus="focus()">
+        </div>
+
+        <button type="button" class="btn-mult center-block" ng-click="submit()">QUERO RECEBER O MANUAL</button>
+        <div class="form-group">
+
+            <label class="warning center-block" ng-show="warning">
+                <p class="title">NÃO ENVIADO</p>
+                <p>Por favor, revise os campos acima.</p>
+            </label>
+        </div>
+
+    </form>
+
+    
+</div>
+
+
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>

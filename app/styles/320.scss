@@ -1,109 +1,276 @@
 @media only screen and (max-width: 479px) {
     $ftitlesize: 19px;
+    $maxsizetxt:290px;
+    $mTopBody: 46px;
+    $containerWidth: 310px;
+    
+    
+    body {
+        margin-top: $mTopBody;
+    }
+    
     .title_dest{
         font-size: $ftitlesize;
     }
-    .container {
-        width: 100%;     
-//        padding-left: 15px;
-//        padding-right: 15px;
-    }
-    .btn-mult{
-        padding: 10px 18px;
-    }
     
-    .navbar {
-        min-height: 46px;
-        margin-bottom:0;
-    }
-
     .navbar-brand{    
         padding: 10px 12px;
-        img{width: 128px;}
+        img{width: 148px;}
+    }
+    
+    .container-nav{
+        max-width: $containerWidth;   
+    }
+    
+    .btn-mult{
+        font-size: 14px;
+        width: $maxsizetxt;
     }
     
     .thumbnail{
-        margin-bottom: 0px;
-        padding-top: 0px;
-        padding-bottom: 0;
+        width: 270px;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 0 4px;
+        left: 0;
+        
         img{
-//            max-width: 92px;
+            max-width: 90px;
+            position: inherit;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
         }
         .caption{
-            h3{ font-size: 17px;}
-        }
-    }
-    
-    
-    #banner{
-        background-image: url("/images/banner-bg-320.jpg");
-        height: 434px;
-        
-        p{
-            padding-top: 0px;
-            
-            font-size: 15px;
             text-align: center;
-            max-width: 290px;
-            float: none;
-        }
-
-        .title{
-            padding-top: 111px;
-            font-size: $ftitlesize;
-            text-align: center;
+            margin: 0px;
+            padding: 0px;
             max-width: 270px;
             float: none;
-        }
-
-        button{
-            float: none;
+            margin-left: 0px;
+            p { 
+                width: 100%;
+                font-size: 13px;
+                padding: 0;
+            }
+            h3{ 
+                font-size: 18px;
+                width: 100%;
+                padding: 0;
+            }
         }
     }
-//    end banner
     
-    #diferencial {
-        min-height: 1345px;
-        
-        .container{
-            padding-top: 38px;
+    
+    
+    #inicio {
+        height: 434px;
+        p{
+            font-size: 15px;
         }
         
-        .title_dest{
+        .title{
             font-size: $ftitlesize;
-            margin-bottom: 0;
+            padding-top: 140px;
+        }
+    }
+    
+    #diferencial {
+        height: 1220px;
+        .container {
+            padding-top: 10px;
+            max-width: $containerWidth;
+        }
+        .title_dest {
+            font-size: $ftitlesize;
+            max-width: $maxsizetxt;
         }
         
         #garantia {
-            hr{box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);}
-            .container{padding-top: 10px; max-width: 320px}
-            img{
-                max-width: 60px;
-                float: left;
+            .container{
+                margin-top: -10px; 
+                max-width: 460px;
+                .media-left{
+                    padding-left: 0px;             
+                    img{
+                        max-width: 70px;    
+                        margin-top: 10px;
+                    }  
+                }  
+                .media-body{
+                    padding-top: 10px;
+                    padding-left: 0px;
+                    p{
+                        font-size:12px;
+                    }   
+                    
+                    .media-heading{
+                        font-size: 14px;
+                    }
+                }
+                    
             }
-            .txt{
-                float: left;
-                padding-top: 0;
-                padding-left: 10px;
-                max-width: 230px;
-                p {
-                    font-family: 'open_sansregular';
-                    font-size: 12px;
-                    padding-top: 0px;
-                    padding-bottom: 0;
-                    margin-bottom: 5px;
-                }
+            hr{
+                margin-top: 0px;
+            }
                 
-                .title {
-                    font-family: 'poppinsmedium';
-                    font-size: 13px;
-                    line-height: 17px;
-                }
+        }
+    }
+    
+    #oq_faz {
+        .container{ padding-top: 20px; }
+        .txt_body{ font-size: 15px; }
+        .title_dest{ font-size: $ftitlesize + 5px; }
+        .btn-mult{
+            width: $maxsizetxt;
+            padding: 12px 15px;
+        }
+    }
+    
+    #produtos {
+        .title_dest{
+            font-size: $ftitlesize + 6px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+        height: 910px;
+        #quad_bg{ 
+            p{
+                font-size: 14px;
+            }
+            .title{
+                font-size: 24px;
+            }
+        }
+        .quad_start{
+            .container{
+                padding-top: 35px;
+                max-width: $containerWidth;    
+            }
+            
+        }
+        
+        .quad_pro{
+            height: 200px !important;
+            .container{
+                padding-top: 20px;
+                max-width: $containerWidth; 
                 
+            }
+            
+        }
+    }
+    
+    #sobre {
+        height: 780px;
+        .col-xs-12{
+            padding: 0;
+        }
+        .container{
+            padding: 0 0;
+            .title_dest{
+                font-size: $ftitlesize + 4px;
+                max-width: 430px;
+                padding: 20px 15px;
+//                padding-bottom: 20px;
+            }
+            #txt_com {
+                margin-top: 20px;
+                height: 260px;
+                max-width: 100%;
+                .title_dest{
+                    left: 8px;    
+                    padding-bottom: 0px;
+                    padding-left: 0px;
+                    font-size: 80px;
+                    padding-top: 40px;
+                }
+                div.txt{
+                    left: -4px;
+                    font-size: 17px;
+                    padding-top: 0;
+                    width: 300px;
+                    margin-top: -25px;
+                    hr{    
+                        margin-top: 14px; 
+                    }
+                    .media{
+                        .media-left{display: none;}
+                    }
+                }
+            }
+            
+            #vd_f{
+                height: 210px; 
+                img{ padding-top: 75px; }
+            }
+            #vd_s{
+                height: 80px; 
+                img{ padding-top: 8px; }
+            }
+            
+        }
+        
+    }
+    
+    #contato {
+        .container{
+                
+        }
+        p{
+            width: 270px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 14px;
+        }
+        .title_dest{
+            font-size: 24px;
+            span.aspas{
+                 font-size: 18px;   
+            }
+        }
+        
+        form{
+            .btn-mult{
+                max-width: 260px;
+                padding: 12px 0px;
             }
         }
     }
     
-    
-    
+     .footer {
+        $footerMax:290px;
+        .container{
+            width:$footerMax; 
+            max-width:$footerMax;
+            padding-left: 0;
+            padding-right: 0;
+         }
+        .links{
+            width: $footerMax;
+            #add {
+                span {
+                    padding: 0px 10px;
+                }
+            }
+            
+        }
+        .contatos{
+            width: $footerMax;
+            padding: 5px 0px 5px 0;
+            
+            p{
+                width: $footerMax;
+                a{font-size: 12px;}
+            }
+        }
+        .roda{
+            width: $footerMax;
+            p{width: $footerMax;}
+        }
+    }
 }

@@ -1,16 +1,17 @@
-<div class="jumbotron" id="banner">
+<div class="jumbotron backgroundImgConf" id="inicio">
    <div class="container center-block">
        <p class="title center-block">INVISTA EM EMPRESAS SAUDÁVEIS E LUCRATIVAS.</p><!--poppins semibold 27-->
        <p class="center-block">Construa uma sólida reserva financeira para o seu futuro. Conquiste sua independência financeira.</p><!--opensans semibold 18-->
-       <button type="button" class="btn-mult center-block">CONHEÇA O MÉTODO MÚLTIPLOS</button><!--poppins semibold 13.5-->
+       
+       <button type="button" class="btn-mult center-block" ng-click="openUrl('http://multiplosinvestimentos.com.br/consultoria')">CONHEÇA O MÉTODO MÚLTIPLOS</button>
    </div>
 </div>
 
 
-<div class="jumbotron" id="diferencial">
+<div class="jumbotron backgroundImgConf" id="diferencial">
     <div class="center-block">
         <div class="container">
-            <p class="title_dest center-block">Oferecemos <span>alternativas viáveis</span> para você ter bons rendimentos sem correr riscos desnecessários.</p>
+            <h3 class="title_dest center-block">Oferecemos <span>alternativas viáveis</span> para você ter bons rendimentos sem correr riscos desnecessários.</h3>
         </div>
         <div class="row container center-block">
             
@@ -30,17 +31,7 @@
 
                     </div>
                 </div>
-                <div class="thumbnail col-md-3 col-xs-6">
-                    <img src="/images/independencia-icon.png" alt="...">
-                    <div class="caption">
-                        <h3>Independência financeira</h3>
-                        <p>Se aposentar 10 anos mais cedo e mudar seu estilo de vida. Já imaginou? Nós mostramos que é possível.</p>
-
-                    </div>
-                </div>
-
                 
-
                 <div class="thumbnail col-md-3 col-xs-6">
                     <img src="/images/confianca-icon.png" alt="...">
                     <div class="caption">
@@ -49,24 +40,55 @@
 
                     </div>
                 </div>
+                
+                <div class="thumbnail col-md-3 col-xs-6">
+                    <img src="/images/independencia-icon.png" alt="...">
+                    <div class="caption">
+                        <h3>Independência financeira</h3>
+                        <p>Se aposentar 10 anos mais cedo e mudar seu estilo de vida. Já imaginou? Nós mostramos que é possível.</p>
 
-
-            
+                    </div>
+                </div>
         </div>
         
-        <div class="panel panel-default hidden-xs">
+        <div class="panel panel-default hidden-xs container">
           <div class="panel-body">
+            <div class="media">
+              <div class="media-left">
+                <a>
+                  <img class="media-object" src="images/garantia-icon.png" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">A Múltiplos te oferece uma garantia incondicional de 30 dias.</h4>
+                <p>Dentro deste período, se você não estiver satisfeito com o nosso serviço, garantimos o reembolso integral do valor investido.</p>
+              </div>
+            </div>
+<!--
             <img src="images/garantia-icon.png" alt="" class="col-md-2">
             <div class="container col-md-10">
                 <p class="title">A Múltiplos te oferece uma garantia incondicional de 30 dias.</p>
                 <p>Dentro deste período, se você não estiver satisfeito com o nosso serviço, garantimos o reembolso integral do valor investido. </p>                
             </div>
+-->
 
           </div>
         </div>
         
         <div class="visible-xs" id="garantia">
             <hr>
+            <div class="media container">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="images/garantia-icon.png" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">A Múltiplos te oferece uma garantia incondicional de 30 dias.</h4>
+                <p>Dentro deste período, se você não estiver satisfeito com o nosso serviço, garantimos o reembolso integral do valor investido.</p>
+              </div>
+            </div>
+<!--
             <div class="container center-block">
                 <img src="images/garantia-icon.png" alt="" class="">
                 <div class="txt">
@@ -74,40 +96,40 @@
                     <p>Dentro deste período, se você não estiver satisfeito com o nosso serviço, garantimos o reembolso integral do valor investido. </p>                
                 </div>
             </div>
+-->
         </div>
         
     </div>
 </div>
 
-<div class="jumbotron" id="oq_faz">
+<div class="jumbotron  backgroundImgConf" id="oq_faz">
     <div class="container center-block">
-        <p class="title_dest">O que a <span>Múltiplos</span> faz?</p>
+        <h3 class="title_dest">O que a <span>Múltiplos</span> faz?</h3>
         <p class="center-block txt_body"><span>Analisamos e montamos</span> uma carteira de investimentos personalizada. Pensamos exclusivamente na construção segura do seu patrimônio.</p>
-        <button type="button" class="btn-mult center-block">FALE AGORA COM UM CONSULTOR MÚLTIPLOS</button>
+        <button type="button" class="btn-mult center-block" ng-click="go('contato')">FALE AGORA COM UM CONSULTOR MÚLTIPLOS.</button>
     </div>
 </div>
 
-<div class="jumbotron" id="planos">
+<div class="jumbotron backgroundImgConf" id="produtos">
     <div class="container center-block">
-        <p class="title_dest center-block">Planos que a <span>Múltiplos</span> oferece</p>
+        <h3 class="title_dest center-block">Planos que a <span>Múltiplos</span> oferece</h3>
     </div>
        
-    <div class="container col-md-6 planos_thumb hidden-xs" id="planos_start">
+    <div class="container col-xs-6 col-md-6 planos_thumb hidden-xs backgroundImgConf" id="planos_start">
         <div class="quad_bg pull-right">
             <p class="title">START</p>
             <p>Este plano fornece uma carteira básica de investimentos. Ideal para quem nunca investiu e quer começar agora.</p>
         </div>
         
     </div>
-    <div class="container col-md-6 planos_thumb hidden-xs" id="planos_pro">
+    <div class="container col-xs-6 col-md-6 planos_thumb hidden-xs backgroundImgConf" id="planos_pro">
         <div class="quad_bg pull-left">
             <p class="title">PROFISSIONAL</p>
             <p>Para quem já começou a investir,  mas quer fugir do baixo rendimento dos bancos, este é o plano ideal. Ele dá acesso à Carteira Múltiplos, que produziu um resultado de 39,3% no primeiro semestre de 2016.</p>
         </div>
     </div>
     
-    
-    <div class=" visible-xs" >
+    <div class="visible-xs" >
         <div id="quad_bg" class="quad_start">
            <div class="container">
                 <p class="title">START</p>
@@ -131,63 +153,59 @@
 </div>
 
 
-<div class="jumbotron" id="conheca" ng-init="settingVantagensVds()">
-    <div class="container center-block">
-        <p class="title_dest center-block">Conheça as <span>vantagens</span> de quem usa o Métodos Múltiplos.</p>
+<div class="jumbotron backgroundImgConf" id="sobre" ng-init="settingVantagensVds()">
+    
 
-        <div class="col-md-8 col-xs-12">
+    <div class="container center-block">
+        <h3 class="title_dest center-block">Conheça as <span>vantagens</span> de quem usa o Método Múltiplos.</h3>
+        <div class="col-md-7 col-xs-12">
             <div class="col-md-12 col-xs-12">
-                <div class="container" id="vd_f" ng-click="callVd(vantagens.vdId1)">
+                <div class="backgroundImgConf" id="vd_f" ng-click="callVd(vantagens.vdId1)">
                     <img src="images/play.png" alt="" class="imgPlay center-block">
                 </div>
            
             </div>
-            <div class="col-md-5 col-xs-6">
-               <div class="container vd2" id="vd_s" ng-click="callVd(vantagens.vdId2)">
+            <div class="col-md-6 col-xs-6">
+               <div class="container vd2 backgroundImgConf" id="vd_s" ng-click="callVd(vantagens.vdId2)">
                     <img src="images/play.png" alt="" class="imgPlay center-block">   
                </div>
                 
             </div>
-<!--            <div class="col-md-2 col-xs-2"></div>-->
-            <div class="col-md-5 col-xs-6 " >
-               <div class="container vd3" id="vd_s" ng-click="callVd(vantagens.vdId3)">
+
+            <div class="col-md-6 col-xs-6 " >
+               <div class="container vd3 backgroundImgConf" id="vd_s" ng-click="callVd(vantagens.vdId3)">
                      <img src="images/play.png" alt="" class="imgPlay center-block">  
                </div>
                  
             </div>            
         </div>
 
-        <div class="col-md-4 col-xs-12">    
-            <div class="container">
-                <div id="txt_com">
-                    <p class="col-md-2 col-xs-2 title_dest">“</p>
-                    <div class="col-md-10  col-xs-10 txt">{{vantagens.txt}}<span>”</span>
-                        <hr>
-                        <div class="media">
-                          <div class="media-left">
-                            <a href="#">
-                              <img class="media-object" src="{{vantagens.thumb}}" alt="...">
-                            </a>
-                          </div>
-                          <div class="media-body">
-                            <h4 class="media-heading">{{vantagens.altor}}</h4>
-                            <p>{{vantagens.prof}}</p>
-                          </div>
-                        </div>
+        <div class="col-md-5 col-xs-12">    
+            <div id="txt_com">
+                <p class="col-lg-12 col-md-2 col-xs-2 title_dest">“</p>
+                <div class="col-lg-12 col-md-10  col-xs-10 txt">{{vantagens.txt}}<span>”</span>
+                    <hr>
+                    <div class="media">
+                      <div class="media-left">
+                        <a>
+                          <img class="media-object" src="{{vantagens.thumb}}" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">{{vantagens.altor}}</h4>
+                        <p>{{vantagens.prof}}</p>
+                      </div>
                     </div>
-                        
                 </div>
-                 
-                
-            </div>    
+            </div>   
         </div>    
     </div>
 </div>
 
-<div class="jumbotron" id="pronto">
+<div class="jumbotron backgroundImgConf" id="contato">
     <div class="container">
         <div class="col-md-7">
-            <p class="title_dest center-block"><span>Estou pronto</span><span class="aspas">(</span><span>a</span><span class="aspas">)</span> para adiquirir o Método Múltiplos.</p>
+            <p class="title_dest center-block"><span>Estou pronto</span><span class="aspas">(</span><span>a</span><span class="aspas">)</span> para adquirir o Método Múltiplos.</p>
             <p class="center-block">Buscaremos investimentos mais rentáveis e seguros com base na análise do seu perfil e nos seus objetivos. Preencha com seus dados e nós entraremos em contato.</p>
         </div>
         <div class="col-md-5">
@@ -202,7 +220,7 @@
                     <input type="text"  class="form-control" placeholder="Email*" ng-model="form.email" ng-focus="focus()">
                 </div>
                 <div class="form-group">
-                    <textarea type="text" class="form-control" placeholder="Mensagem" ng-model="form.msg"/>
+                    <textarea type="text" class="form-control" placeholder="Mensagem" ng-model="form.msg" rows="3"/>
                 </div>
                 
                 <button type="button" class="btn-mult center-block" ng-click="submit()">SOLICITE SEU ORÇAMENTO</button>
@@ -211,7 +229,6 @@
                     <label class="warning center-block" ng-show="warning">
                         <p class="title">NÃO ENVIADO</p>
                         <p>Por favor, revise os campos acima.</p>
-<!--                        {{warning}}-->
                     </label>
                 </div>
                 

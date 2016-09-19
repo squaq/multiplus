@@ -1,4 +1,217 @@
 @media only screen and (max-width: 639px) {
+    $ftitlesize: 24px;
+    $maxsizetxt:380px;
+    $mTopBody: 46px;
+    $containerWidth: 460px;
     
+    
+    body {
+        margin-top: $mTopBody;
+    }
+    
+    .title_dest{
+        font-size: $ftitlesize;
+    }
+    
+    .navbar-brand{    
+        padding: 10px 12px;
+        img{width: 148px;}
+    }
+    
+    .container-nav{
+        max-width: $containerWidth;   
+    }
+    
+    .btn-mult{
+        font-size: 15px;
+        width: $maxsizetxt;
+    }
+    
+    .thumbnail{
+        max-width: 400px;
+        margin: 10px 0px 0px 50px;
+        padding: 10px 0px 10px 0px;
+        float: left;
+
+        img{
+            max-width: 70px;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+        }
+        .caption{
+            text-align: left;
+            margin: 0px;
+            padding: 0px;
+            max-width: $containerWidth;
+            float: none;
+            margin-left: 34px;
+            p { 
+                width:380px;
+                font-size: 13px
+            }
+            h3{ 
+                font-size: 20px;
+                width: 380px;
+            }
+        }
+    }
+    
+    
+    
+    #inicio {
+        height: 549px;
+        p{
+            font-size: 16px;
+        }
+        
+        .title{
+            font-size: $ftitlesize;
+            padding-top: 180px;
+        }
+    }
+    
+    #diferencial {
+        height: 910px;
+        .container {
+            padding-top: 10px;
+            max-width: $containerWidth;
+        }
+        .title_dest {
+            font-size: 24px;
+            max-width: 410px;
+        }
+        
+        #garantia {
+            .container{
+                margin-top: -10px; 
+                
+                max-width: 460px;
+                .media-left{
+                    padding-left: 10px;             img{
+                        max-width: 80px;    
+                        margin-top: 10px;
+                    }  
+                }  
+                .media-body{
+                    padding-top: 10px;
+                    padding-left: 10px;
+                    p{
+                        font-size:13px;
+                    }     
+                }
+                    
+            }
+        }
+    }
+    
+    #oq_faz {
+        .container{ padding-top: 30px; }
+        .title_dest{ font-size: 28px; }
+        .btn-mult{
+            width: 410px;
+        }
+    }
+    
+    #produtos {
+        .title_dest{
+            font-size: $ftitlesize + 4px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        height: 910px;
+        
+        .quad_start{
+            .container{
+                padding-top: 30px;
+                max-width: 420px;    
+            }
+            
+        }
+        
+        .quad_pro{
+            .container{
+                padding-top: 20px;
+                max-width: 420px;    
+            }
+            
+        }
+    }
+    
+    #sobre {
+        height: 845px;
+        .container{
+            .title_dest{
+                font-size: $ftitlesize + 4px;
+                max-width: 430px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            #txt_com {
+                margin-top: 20px;
+                height: 252px;
+                max-width: 390px;
+                .title_dest{
+                    left: 8px;
+                    padding-bottom: 0px;
+                    padding-left: 0px;
+                }
+                div.txt{
+                    left: -4px; 
+                    font-size: 18px;
+                    padding-top: 0;
+                    hr{    
+                        margin-top: 14px; 
+                    }
+                }
+            }
+        }
+        #vd_f{height: 260px;}
+        #vd_s{height: 110px;}
+    }
+    
+    #contato {
+        .container{
+                
+        }
+        p{
+            max-width: 390px;
+        }
+        .title_dest{
+            font-size: 28px;
+            
+            span.aspas{
+                 font-size: 20px;   
+            }
+        }
+        
+    }
+    
+    .footer {
+        $footerMax:420px;
+        .container{width:$footerMax;}
+        .links{
+            width: $footerMax;
+            font-size: 13px;
+            #add {
+                span {
+                    padding: 0px 20px;
+                }
+            }
+            
+        }
+        .contatos{
+            width: $footerMax;
+            
+            p{
+                width: $footerMax;
+                a{font-size: 13px;}
+            }
+        }
+        .roda{
+            width: $footerMax;
+            p{width: $footerMax;}
+        }
+    }
     
 }
