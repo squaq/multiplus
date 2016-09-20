@@ -124,67 +124,9 @@ body {
 }
 
 
-form{
-    max-width: 359px;
-    textarea[type="text"], input[type="text"]{
-        font-size: 16px;
-        font-family: 'open_sanssemibold';
-        color: #424445;
-    }
-    span {
-        font-size: 12px;
-        font-family: 'open_sanssemibold';
-        color: #737679;
-        padding-bottom: 10px;
-    }
-    textarea[type="text"]{
-        margin-bottom: 25px; 
-    }
-    input[type="text"]{
-        height: 45px;
-        margin-bottom: 0px;
-    }
-
-    .btn-mult{
-        padding: 12px 48px;
-    }
-
-    .wtxt{
-        font-family: 'open_sanssemibold';
-        color: #9d1d20;
-        font-size: 16px;
-        position: absolute;
-        margin-top: 12px;
-        margin-left: 12px;
-        background: #fff;
-        pointer-events : none;
-        text-align: left;
-        width: 320px;
-    }
-
-    #wtxtNome{ margin-top: 40px; }
-
-    label {
-        p{
-            text-align: center;
-            color: #9d1d20;
-            font-family: 'open_sansregular';
-            font-size: 14px;
-            line-height: 1px;
-        }
-        .title{
-            font-family: 'open_sansbold';
-            padding-top: 20px;
-        }
-    }
-
-
-
-}
-
 
 #inicio{
-    background-image: url("/teste/images/banner-bg.jpg");
+    background-image: url("../images/banner-bg.jpg");
     .container{max-width: $containerWidth;}
     height: 701px;
     
@@ -271,7 +213,7 @@ form{
 }
 
 #oq_faz {
-    background-image: url("/teste/images/oq-faz-bg.jpg");
+    background-image: url("../images/oq-faz-bg.jpg");
     height: 424px;
     .title_dest{text-align: left; font-size:$ftitlesize; }
     .container{
@@ -338,26 +280,26 @@ form{
         
     }
     #planos_start {    
-        background-image: url("/teste/images/planos-start-bg.jpg");
+        background-image: url("../images/planos-start-bg.jpg");
         .quad_bg{
             background-color: #0075be;
             -webkit-clip-path: polygon(0 0, 0 45%, 5% 50%, 0 55%, 0 100%, 100% 100%, 100% 0%);
             -moz-clip-path: polygon(0 0, 0 45%, 5% 50%, 0 55%, 0 100%, 100% 100%, 100% 0%);
             clip-path: polygon(0 0, 0 45%, 5% 50%, 0 55%, 0 100%, 100% 100%, 100% 0%);
-//            background-image:  url("/teste/images/bg_start.png");  
+//            background-image:  url("../images/bg_start.png");  
         }
         
     }
     #planos_pro{ 
         
-        background-image: url("/teste/images/planos-pro-bg.jpg");
+        background-image: url("../images/planos-pro-bg.jpg");
         .quad_bg{
             background-color: #00396d;
             -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 55%, 95% 50%, 100% 45%, 100% 0);
             -moz-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 55%, 95% 50%, 100% 45%, 100% 0);
             clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 55%, 95% 50%, 100% 45%, 100% 0);
             
-//            background-image:  url("/teste/images/bg_pro.png");  
+//            background-image:  url("../images/bg_pro.png");  
         }
     }
     
@@ -472,7 +414,7 @@ form{
 }
 
 #contato{
-//    background-image: url("/teste/images/pronto-bg.jpg");
+//    background-image: url("../images/pronto-bg.jpg");
     .container{
         padding-top: 60px;
         padding-bottom: 60px;
@@ -570,8 +512,8 @@ form{
 .footer {
     .container{max-width: $containerWidth;}
 //    background-color: #cdcdcd;
-    background-image: url("/teste/images/footer-pattern.jpg");
-//    background-image: url("/teste/images/pronto-bg.jpg");
+    background-image: url("../images/footer-pattern.jpg");
+//    background-image: url("../images/pronto-bg.jpg");
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #FFF;

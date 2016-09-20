@@ -1,0 +1,35 @@
+<form class="center-block"  ng-show="!sentEmail">
+   <div class="form-group" id="formNome">
+        <span class="pull-right">*campos obrigatórios.</span>
+        <p class="wtxt" ng-show="warningNome" id="wtxtNome">Digite seu nome</p>
+        <input type="text" class="form-control" placeholder="Nome*" ng-model="form.nome"  ng-focus="focus()">
+    </div>
+    <div class="form-group" id="formEmail"><!--has-error-->
+        <p class="wtxt" ng-show="warningEmail">Digite corretamente seu email</p><!--<i class="glyphicon glyphicon-remove-sign"></i>-->
+        <input type="text"  class="form-control" placeholder="Email*" ng-model="form.email" ng-focus="focus()">
+    </div>
+    <div class="form-group">
+        <textarea type="text" class="form-control" placeholder="Mensagem" ng-model="form.msg" rows="3"/>
+    </div>
+
+    <div class="form-group">
+        <button type="button" class="btn-mult center-block" ng-click="submit()">SOLICITE SEU ORÇAMENTO</button>
+    </div>
+
+    <div class="form-group">
+
+        <label class="warning center-block" ng-show="warning">
+            <p class="title">NÃO ENVIADO</p>
+            <p>Por favor, revise os campos acima.</p>
+        </label>
+    </div>
+
+</form>
+
+<div class="container" ng-show="sentEmail">
+        <div class="container center-block" id="msgEnviado">
+            <p class="title">RECEBEMOS SUAS INFORMAÇÕES.</p>
+            <p>Em breve entraremos em contato.</p>
+        </div>
+       <button type="button" class="btn-mult center-block" ng-click="novoOrcamento()">SOLICITE NOVO ORÇAMENTO</button> 
+</div>

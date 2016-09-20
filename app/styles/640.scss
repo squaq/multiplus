@@ -145,7 +145,7 @@
     
     
     #inicio {
-        background-image: url("/teste/images/banner-bg-640.jpg");
+        background-image: url("../images/banner-bg-640.jpg");
         height: 637px;
         p{
             padding-top: 0px;
@@ -209,7 +209,7 @@
     }
     
     #oq_faz {
-        background-image: url("/teste/images/oq-faz-bg-640.jpg");
+        background-image: url("../images/oq-faz-bg-640.jpg");
         height: 324px;
         .title_dest{text-align: center; font-size: $ftitlesize;}
         .container{
@@ -266,8 +266,8 @@
             margin-top: -11px;
         }
         
-        .start_bg{background-image: url("/teste/images/planos-start-bg-640.jpg");}
-        .pro_bg{background-image: url("/teste/images/planos-pro-bg-640.jpg");}
+        .start_bg{background-image: url("../images/planos-start-bg-640.jpg");}
+        .pro_bg{background-image: url("../images/planos-pro-bg-640.jpg");}
         
         
         .quad_start {
@@ -286,7 +286,7 @@
         }
         
         .pro_bg {
-            background-image: url("/teste/images/planos-pro-bg.jpg");
+            background-image: url("../images/planos-pro-bg.jpg");
         }
         
     }
@@ -357,7 +357,7 @@
             textarea[type="text"]{height: 75px; margin-bottom: 25px; }
             input[type="text"]{height: 45px;margin-bottom: 0px;}
             
-            button{max-width: 359px;}
+            .btn-mult{max-width: 359px;}
             
             .wtxt{width: 340px;}
             

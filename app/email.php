@@ -3,8 +3,8 @@
 $nome = $_GET["nome"];
 $email = $_GET["email"];
 $msg = $_GET["msg"];
-//$to = "contato@multiplosinvestimentos.com.br";
-$to = "evertonsquaq@gmail.com";
+$to = "contato@multiplosinvestimentos.com.br";
+//$to = "evertonsquaq@gmail.com";
 $subject = "Contato Múltiplus";
 
 $message = "
@@ -13,10 +13,11 @@ $message = "
 <title>Contato Site</title>
 </head>
 <body>
-<p>This email contains HTML Tags!</p>
 
 <p><span><b>Nome : </b></span>" . $nome . "</p>
 <p><span><b>Email : </b></span>" . $email . "</p>
+
+<p><b>Mensagem:</b></span>
 <p>" . $msg . "</p>
 </body>
 </html>
