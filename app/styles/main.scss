@@ -329,9 +329,11 @@ body {
         opacity:.5;
         -webkit-transition: opacity 0.2s ease-in-out;
         transition: opacity 0.2s ease-in-out;
+        iframe{width: 100%; height: 100%;}
     }
     #vd_s {
         img{ padding-top: 42px;}
+        iframe{width: 100%; height: 100%;}
         margin-top: 20px;
         background-color: #424445;
         cursor: pointer;
@@ -458,6 +460,9 @@ body {
 
         .btn-mult{
             padding: 12px 48px;
+            max-width: 100%;
+            width: 100%;
+            
         }
 
         .wtxt{

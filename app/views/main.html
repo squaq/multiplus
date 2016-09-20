@@ -142,20 +142,25 @@
         <div class="col-md-7 col-xs-12">
             <div class="col-md-12 col-xs-12">
                 <div class="backgroundImgConf" id="vd_f" ng-click="callVd(vantagens.vdId1)">
-                    <img src="images/play.png" alt="" class="imgPlay center-block">
+                    
+                    <iframe class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+<!--                    <img src="images/play.png" alt="" class="imgPlay center-block">-->
                 </div>
            
             </div>
             <div class="col-md-6 col-xs-6">
-               <div class="container vd2 backgroundImgConf" id="vd_s" ng-click="callVd(vantagens.vdId2)">
-                    <img src="images/play.png" alt="" class="imgPlay center-block">   
+               <div class=" vd2 backgroundImgConf" id="vd_s" ng-click="callVd(vantagens.vdId2)">
+                    
+                    <iframe class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+<!--                    <img src="images/play.png" alt="" class="imgPlay center-block">   -->
                </div>
                 
             </div>
 
             <div class="col-md-6 col-xs-6 " >
-               <div class="container vd3 backgroundImgConf" id="vd_s" ng-click="callVd(vantagens.vdId3)">
-                     <img src="images/play.png" alt="" class="imgPlay center-block">  
+               <div class=" vd3 backgroundImgConf" id="vd_s" ng-click="callVd(vantagens.vdId3)">
+                  <iframe class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+<!--                  <img src="images/play.png" alt="" class="imgPlay center-block">-->
                </div>
                  
             </div>            
@@ -203,13 +208,10 @@
                 <div class="form-group">
                     <textarea type="text" class="form-control" placeholder="Mensagem" ng-model="form.msg" rows="3"></textarea>
                 </div>
-                
-                
-                
-                
+
+                <button type="button" class="btn-mult center-block" ng-click="submit()">SOLICITE SEU ORÇAMENTO</button>
                 
                 <div class="form-group">
-                   <button type="button" class="btn-mult center-block" ng-click="submit()">SOLICITE SEU ORÇAMENTO</button>
                     <label class="warning center-block" ng-show="warning">
                         <p class="title">NÃO ENVIADO</p>
                         <p>Por favor, revise os campos acima.</p>

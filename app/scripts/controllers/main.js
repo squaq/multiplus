@@ -106,9 +106,13 @@ angular.module('multiplusApp')
     }
     
     $scope.settingVantagensVds = function(){
-        angular.element("#vd_f").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId1+"/0.jpg)");
-        angular.element(".vd2").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId2+"/0.jpg)");
-        angular.element(".vd3").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId3+"/0.jpg)");
+//        angular.element("#vd_f").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId1+"/0.jpg)");
+//        angular.element(".vd2").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId2+"/0.jpg)");
+//        angular.element(".vd3").css("background-image", "url(http://img.youtube.com/vi/"+$scope.vantagens.vdId3+"/0.jpg)");
+        angular.element("#vd_f iframe").attr('src', 'https://www.youtube.com/embed/'+$scope.vantagens.vdId1);
+        angular.element(".vd2 iframe").attr('src', 'https://www.youtube.com/embed/'+$scope.vantagens.vdId2);
+        angular.element(".vd3 iframe").attr('src', 'https://www.youtube.com/embed/'+$scope.vantagens.vdId3);
+//        'https://www.youtube.com/embed/'
     };
     
     $scope.callVd = function(vdId){
