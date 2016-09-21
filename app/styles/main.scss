@@ -498,6 +498,8 @@ body {
 
     }
     #msgEnviado {
+        padding-top: 0;
+        max-width: 100%;
         p{
             font-family: 'open_sanssemibold';
             font-size: 18px;
@@ -507,6 +509,12 @@ body {
         .title{
             font-family: 'open_sansbold';
             font-size: 25px;
+        }
+        .btn-mult{
+            margin-top: 30px;
+            padding: 12px 20px;
+            width: 100%;
+            max-width: 390px;
         }
     }
 }

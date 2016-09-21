@@ -55,12 +55,9 @@ angular.module('multiplusApp')
         $scope.warning = validForm();
         if(!$scope.warning){
 //            send message
-            var url = "email.php?email="+$scope.form.email+"&nome="+$scope.form.nome+"&msg="+$scope.form.msg;
-            $http.post(url, {}, {
-                headers : {
-                    'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
-                } 
-            }).then(function(data) {
+            
+            var url = "mail.php?email="+$scope.form.email+"&nome="+$scope.form.nome+"&msg="+$scope.form.msg;
+            $http.post("mail.php", {"email":$scope.form.email, "nome":$scope.form.nome, "msg":$scope.form.msg }).then(function(data) {
                 if (data.errors) {
                   // Showing errors.
                     console.log('errors', data.errors);
@@ -68,7 +65,7 @@ angular.module('multiplusApp')
                 } else {
                   $scope.message = data.message;
                     $scope.sentEmail = true;
-                    console.log('success', data.message);
+                    console.log('success', data);
                 }
             }, function(error){console.log('error', error);});
 //            console.log($scope.form, 'time to send message');
