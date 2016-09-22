@@ -8,9 +8,9 @@
     $msg  = $request->msg;
     
     $quebra_linha = "\n";
-    $emailsender = "contato@multiplosinvestimentos.com.br";
+    $emailsender = "joao@multiplosinvestimentos.com.br";
     $nomeremetente = "Múltiplos";
-    $emaildestinarario = "contato@multiplosinvestimentos.com.br";
+    $emaildestinarario = "joao@multiplosinvestimentos.com.br";
     $comcopia = "";
     $comcopiaoculta = "";
     $assunto = "Email contato Múltiplos";
