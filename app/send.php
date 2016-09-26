@@ -1,5 +1,4 @@
 <?php
-header('Access-Control-Allow-Origin: *');
 //    Devemos alterar a linha abaixo e colocar uma conta de email v·lida da hospedagem,
 $emailsender = "joao@multiplosinvestimentos.com.br";
         
@@ -44,13 +43,7 @@ if(strlen($comcopiaoculta) > 0) $headers .= "Bcc: ".$comcopiaoculta.$quebra_linh
 /* Enviando a mensagem */
 mail($emaildestinatario, $assunto, $mensagemHTML, $headers, "-r". $emailsender);
 
-print $mensagemHTML;
 
 /* Mostrando na tela as informaÁıes enviadas por e-mail */
-print "Mensagem <b>$assunto</b> enviada com sucesso!<br><br>
-De: $emailsender<br>
-Para: $emaildestinatario<br>
-Com c&oacute;pia: $comcopia<br>
-Com c&oacute;pia Oculta: $comcopiaoculta<br>
-<p><a href='".$_SERVER["HTTP_REFERER"]."'>Voltar</a></p>"
+print "Mensagem enviada com sucesso!";
 ?>

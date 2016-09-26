@@ -57,7 +57,7 @@ angular.module('multiplusApp')
 //            send message
             
             var url = "mail.php?email="+$scope.form.email+"&nome="+$scope.form.nome+"&msg="+$scope.form.msg;
-            $http.post("mail.php", {"email":$scope.form.email, "nome":$scope.form.nome, "msg":$scope.form.msg }).then(function(data) {
+            $http.post("send.php", {"email":$scope.form.email, "nome":$scope.form.nome, "msg":$scope.form.msg }).then(function(data) {
                 if (data.errors) {
                   // Showing errors.
                     console.log('errors', data.errors);
