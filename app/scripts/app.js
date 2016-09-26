@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('multiplusApp', ['ui.bootstrap'])
+  .module('multiplusApp', ['ui.bootstrap', 'ngCookies'])
     .run(function(){
     angular.element(document).ready(function(){
         angular.element(".navbar-toggle").on("click", function () {

@@ -46,7 +46,9 @@ angular.module('multiplusApp')
 //      console.log('Modal dismissed at: ' + new Date());
 //    });
     
-    
+    $scope.popup = function(){
+        console.log("popup");
+    }
     
     
     
