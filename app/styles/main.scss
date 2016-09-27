@@ -570,6 +570,86 @@ body {
   margin: 30px 0;
 }
 
+#popup{
+    #inside{
+        $rightW : 300px;
+        background-image: url("../images/bg-modal.jpg");
+        width: 659px;
+        height: 516px;
+        border: 14px solid #fff;
+        float: left;
+        .pop-right{
+            float: right; 
+            max-width: $rightW; 
+            margin: 40px 30px;
+            .btn-mult{
+                font-size: 16px;
+                padding: 12px 36px;
+            }
+            form{
+                span{ color: #e0e1e1; font-size: 12px;}
+                .wtxtPop {
+                    color: #9d1d20;
+                    font-size: 16px;
+                    position: absolute;
+                    margin-top: 6px;
+                    background-color: #fff;
+                    padding-left: 10px;
+                    filter: none;
+                    pointer-events: none;
+                    margin-left: 2px;
+                }
+                #wtxtNomePop{margin-top: 24px;}
+            }
+            .warning{
+                p{font-size: 14px; line-height: 10px; filter: none;}
+                p.title{padding-top: 20px;}
+            }
+        }
+        .pop-left{
+            float: left; 
+            max-width: 250px;
+            margin: 10px 10px;
+            img{
+                padding: 15px 15px;
+            }
+            #selo{
+                margin-left: 40px;
+            }
+        }
+        
+        #manual {    
+            filter: drop-shadow(11px 12px 3px rgba(0, 0, 0, 0.5));
+        }
+        p { 
+            color: #fff;
+            font-size: 30px;
+            font-family: 'poppinsregular';
+            text-align: center;
+            filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
+            max-width: $rightW;
+            span {
+                color: #e9e41f;
+                font-family: 'poppinsbold';
+            }
+        }
+        p.p2{
+            font-size: 20px;
+            span{
+                color: #fff;
+            }
+        }
+    }
+    
+    #closePopup{
+        position: absolute;
+        right: -100px;
+        color: #fff;
+        .glyphicon{
+            font-size: 32px;
+        }
+    }
+}
 
 
 
