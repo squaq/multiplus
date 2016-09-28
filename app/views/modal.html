@@ -23,13 +23,11 @@
         <div class="pop-left">
            <img class=""  id="manual" src="images/manual.png" alt="">
            <img class="" id="selo" src="images/selo.png" alt="">
-           <img src="images/seguro.png" alt="">
-            
         </div> 
          
         <div class="pop-right">
-            <p class="container">ANTES DE IR, <br>QUE TAL RECEBER <span>GRATUITAMENTE</span></p>
-            <p class="container p2">O <span>MANUAL MÚLTIPLOS?</span></p>
+            <p class="container">ANTES DE IR, QUE TAL RECEBER <span>GRATUITAMENTE</span> <span class="p2">O <span>MANUAL MÚLTIPLOS?</span></span></p>
+<!--            <p class="container p2">O <span>MANUAL MÚLTIPLOS?</span></p>-->
             <form class="center-block"  ng-show="!sentEmail">
                <div class="form-group" id="formNomePop">
                     <span class="pull-right">*campos obrigatórios.</span>
@@ -61,7 +59,14 @@
                     
             </div>
       </div>
+      <div id="cadeado">
+          <img src="images/seguro.png" alt="">
+          <p>Fique tranquilo! Seus dados estarão seguros conosco.</p>
+      </div>
+      
+      <div ng-click="cancel()" id="closePopup"><i class="glyphicon glyphicon-remove-circle"></i></div>
     </div>
-    <div ng-click="cancel()" id="closePopup"><i class="glyphicon glyphicon-remove-circle"></i></div>
+    
+    
     
 </div>
