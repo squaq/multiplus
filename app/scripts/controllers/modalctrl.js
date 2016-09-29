@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibModalInstance, $http) {
+angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibModalInstance, $http, $cookies) {
     $scope.form = {};
     
     $scope.form.id = "64358";
@@ -10,9 +10,9 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
     
     $scope.form.nome = '';
     $scope.form.email = '';
-    $scope.warning = false;
-    $scope.warningNome = false;
-    $scope.warningEmail = false;
+    $scope.warningPop = false;
+    $scope.warningNomePop = false;
+    $scope.warningEmailPop = false;
     
     $scope.ok = function () {
         $uibModalInstance.close($scope.selected);
@@ -22,9 +22,9 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
         $uibModalInstance.dismiss();
     };
     
-   $scope.submit = function(){
-       $scope.warning = validForm();
-        if(!$scope.warning){
+   $scope.sendForm = function(){
+       $scope.warningPop = validForm();
+        if(!$scope.warningPop){
             
             $http.post('https://leadlovers.com/Pages/Index/64358', $scope.form, {
                 headers : {
@@ -34,10 +34,12 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
                 if (data.errors) {
                   // Showing errors.
                     console.log('errors', data.errors);
-
                 } else {
                   $scope.message = data.message;
                     console.log('success', data.message);
+                    
+                    $cookies.put('multiplosPopUp', true);
+                    $scope.sentEmailPop = true;
                 }
             }, function(error){console.log('error', error);});
 //            send message
@@ -47,26 +49,25 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
    };
    
    $scope.focus = function(){
-        $scope.warning = false;
-        $scope.warningNome = false;
-        $scope.warningEmail = false;
+        $scope.warningPop = false;
+        $scope.warningNomePop = false;
+        $scope.warningEmailPop = false;
     };
    
    function validForm(){
-        angular.element('.formNome').removeClass('has-error');
-        angular.element('.formEmail').removeClass('has-error');
+        angular.element('#formNomePop').removeClass('has-error');
+        angular.element('#formEmailPop').removeClass('has-error');
         if($scope.form.nome.length === 0 || !$scope.form.nome.trim()){
-            angular.element('.formNome').addClass('has-error');
-            $scope.warningNome = true;
+            angular.element('#formNomePop').addClass('has-error');
+            $scope.warningNomePop = true;
             return '*preencha o campo nome.';
         }
         
         if($scope.form.email.length === 0 || !/\S+@\S+\.\S+/.test($scope.form.email)){
-            angular.element('.formEmail').addClass('has-error');
-            $scope.warningEmail = true;
+            angular.element('#formEmailPop').addClass('has-error');
+            $scope.warningEmailPop = true;
             return '*digite um email válido.';
-        }
-        $scope.sentEmail = true;
+        }        
         return false;
     }
 });

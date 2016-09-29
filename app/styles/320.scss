@@ -243,6 +243,69 @@
         }
     }
     
+    #popup{
+        #inside {
+            border-top: none;
+            border-bottom: none;
+            height: 475px;
+            .pop-left{
+                display: none;
+            }
+
+           .pop-right{
+                margin: 0px 0px;
+                .btn-mult{
+                    font-size: 14px;
+                }
+               .warning{
+                    p{
+                        margin-top: 0;
+                    }
+                }
+               form{
+  
+                }
+            }
+            p {max-width: 100%; font-size: 22px; margin-top: 61px;}
+            span.p2{font-size: 22px;}
+        }
+        
+        
+        #closePopup {
+            left: 88%;
+            right: 11%;
+            top: 8px;
+        }
+        
+        #cadeado{
+            width: 300px;
+            padding-top: 20px;
+            img{padding-top: 2px;}
+            p{
+                font-size: 13px;
+                width: 220px;
+                padding-top: 0px;
+                margin-top: 0px
+            }
+        }
+        
+        #msgEnviado{
+            width: 300px;
+            p{
+                font-family: 'open_sanssemibold'; 
+                filter: none; 
+                font-size: 18px;
+                margin-top: 0px;
+                width: 270px;
+            }
+            p.title{
+                font-size: 25px;
+                margin-top: 20px;
+            }
+            .btn-mult{margin-top: 30px;}
+        }
+    }    
+    
      .footer {
         $footerMax:290px;
         .container{

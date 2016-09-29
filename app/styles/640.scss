@@ -410,6 +410,7 @@
             margin-left: auto;
             margin-right: auto;
             padding-top: 80px;
+            width: 410px;
             img{padding-top: 0;}
             p{
                 
@@ -418,6 +419,22 @@
                 padding-top: 4px;
                 
             }
+        }
+        
+        #msgEnviado{
+            width: 340px;
+            p{
+                font-family: 'open_sanssemibold'; 
+                filter: none; 
+                font-size: 18px;
+                margin-top: 0px;
+                width: 100%;
+            }
+            p.title{
+                font-size: 25px;
+                margin-top: 20px;
+            }
+            .btn-mult{margin-top: 30px;}
         }
     }
     

@@ -28,21 +28,21 @@
         <div class="pop-right">
             <p class="container">ANTES DE IR, QUE TAL RECEBER <span>GRATUITAMENTE</span> <span class="p2">O <span>MANUAL MÚLTIPLOS?</span></span></p>
 <!--            <p class="container p2">O <span>MANUAL MÚLTIPLOS?</span></p>-->
-            <form class="center-block"  ng-show="!sentEmail">
+            <form class="center-block"  ng-show="!sentEmailPop">
                <div class="form-group" id="formNomePop">
                     <span class="pull-right">*campos obrigatórios.</span>
-                    <p class="wtxtPop" ng-show="warningNome" id="wtxtNomePop">Digite seu nome</p>
+                    <p class="wtxtPop" ng-show="warningNomePop" id="wtxtNomePop">Digite seu nome</p>
                     <input type="text" class="form-control" placeholder="Nome*" ng-model="form.nome"  ng-focus="focus()">
                 </div>
                 <div class="form-group" id="formEmailPop">
-                    <p class="wtxtPop" ng-show="warningEmail">Digite corretamente seu email</p>
+                    <p class="wtxtPop" ng-show="warningEmailPop">Digite corretamente seu email</p>
                     <input type="text"  class="form-control" placeholder="Email*" ng-model="form.email" ng-focus="focus()">
                 </div>
 
-                <button type="button" class="btn-mult center-block" ng-click="submit()">QUERO RECEBER O MANUAL</button>
+                <button type="button" class="btn-mult center-block" ng-click="sendForm()">QUERO RECEBER O MANUAL</button>
 
                 <div class="form-group">
-                    <label class="warning center-block" ng-show="warning">
+                    <label class="warning center-block" ng-show="warningPop">
                         <p class="title">NÃO ENVIADO</p>
                         <p>Por favor, revise os campos acima.</p>
                     </label>
@@ -50,11 +50,11 @@
 
             </form>
             
-            <div class="" ng-show="sentEmail">
-                <div class="container" id="msgEnviado">
-                    <p class="title">RECEBEMOS SUAS INFORMAÇÕES.</p>
-                    <p>Em breve entraremos em contato.</p>
-                    <button type="button" class=" center-block btn-mult" ng-click="novoOrcamento()">SOLICITE NOVO ORÇAMENTO</button>
+            <div class="" ng-show="sentEmailPop">
+                <div class="container center-block" id="msgEnviado">
+                    <p class="title">OBRIGADO!</p>
+                    <p>Seu cadastro foi feito com sucesso! Em breve, você receberá o Manual Múltiplos por email.</p>
+                    <button type="button" class=" center-block btn-mult" ng-click="novoOrcamento()">COMPARTILHAR</button>
                 </div>
                     
             </div>

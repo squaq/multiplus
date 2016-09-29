@@ -587,6 +587,7 @@ body {
                 font-size: 16px;
                 padding: 12px 36px;
             }
+            p{line-height: 30px;}
             form{
                 span{ color: #e0e1e1; font-size: 12px;}
                 max-width: $rightW;
@@ -594,14 +595,14 @@ body {
                     color: #9d1d20;
                     font-size: 16px;
                     position: absolute;
-                    margin-top: 6px;
+                    margin-top: 3px;
                     background-color: #fff;
                     padding-left: 10px;
                     filter: none;
                     pointer-events: none;
                     margin-left: 2px;
                 }
-                #wtxtNomePop{margin-top: 24px;}
+                #wtxtNomePop{margin-top: 19px;}
             }
             .warning {
                 p{font-size: 14px; line-height: 10px; filter: none;}
@@ -670,6 +671,25 @@ body {
             line-height: 14px;
         }
     }
+    
+    #msgEnviado{
+            width: 300px;
+            p{
+                font-family: 'open_sanssemibold'; 
+                filter: none; 
+                font-size: 18px;
+                margin-top: 0px;
+                width: 270px;
+                line-height: 20px !important;
+            }
+            p.title{
+                font-size: 23px;
+                margin-top: 20px;
+            }
+            .btn-mult{margin-top: 30px;}
+    }
+    
+    
 }
 
 
