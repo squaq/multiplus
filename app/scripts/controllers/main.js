@@ -27,7 +27,7 @@ angular.module('multiplusApp')
     $scope.vantagens.vdId1 = "6jU1Hg6-7xI";
     $scope.vantagens.vdId2 = "MQJzE8qM8Fs";
     $scope.vantagens.vdId3 = "nRYeswbOoRw";
-        
+    $scope.popupAlreadyCalled = false;   
     
 //    $uibModal.open({
 //            animation: true,
@@ -49,7 +49,7 @@ angular.module('multiplusApp')
     $scope.popup = function(){
         
         console.log('multiplosPopUp', $cookies.get('multiplosPopUp'));
-        if(!$cookies.get('multiplosPopUp')){
+        if(!$cookies.get('multiplosPopUp')&& !$scope.popupAlreadyCalled){
             $uibModal.open({
                     animation: true,
                     templateUrl: 'views/modal.html',
@@ -65,6 +65,7 @@ angular.module('multiplusApp')
                 console.log('selectedItem', selectedItem);
             }, function () {
               console.log('Modal dismissed at: ' + new Date());
+                $scope.popupAlreadyCalled = true;
             });        
         }
         

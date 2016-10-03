@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibModalInstance, $http, $cookies) {
+angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibModalInstance, $http, $cookies, $httpParamSerializer) {
     $scope.form = {};
     
     $scope.form.id = "64358";
@@ -25,12 +25,13 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
    $scope.sendForm = function(){
        $scope.warningPop = validForm();
         if(!$scope.warningPop){
+            $http({
+                method:'POST',
+                url:'https://leadlovers.com/Pages/Index/64358', 
+                data:$httpParamSerializer($scope.form), 
+                headers : {'Content-Type' : 'application/x-www-form-urlencoded;'} 
             
-            $http.post('https://leadlovers.com/Pages/Index/64358', $scope.form, {
-                headers : {
-                    'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
-                } 
-            }).then(function(data) {
+        }).then(function(data) {
                 if (data.errors) {
                   // Showing errors.
                     console.log('errors', data.errors);
