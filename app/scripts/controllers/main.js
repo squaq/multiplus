@@ -72,7 +72,10 @@ angular.module('multiplusApp')
         console.log("popup");
     }
     
-    
+    if($location.search().emailSent){
+        $scope.popup();
+        $cookies.put('multiplosPopUp')
+    }
     
     $scope.submit = function(){
         

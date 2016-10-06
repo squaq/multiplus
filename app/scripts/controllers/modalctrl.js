@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibModalInstance, $http, $cookies, $httpParamSerializer) {
+angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibModalInstance, $http, $cookies, $location) {
     $scope.form = {};
     
     $scope.form.id = "64358";
@@ -13,6 +13,12 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
     $scope.warningPop = false;
     $scope.warningNomePop = false;
     $scope.warningEmailPop = false;
+    
+    
+    
+    if($location.search().emailSent){
+        $scope.sentEmailPop = $location.search().emailSent;
+    }
     
     $scope.ok = function () {
         $uibModalInstance.close($scope.selected);

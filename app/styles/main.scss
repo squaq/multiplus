@@ -586,11 +586,14 @@ body {
             .btn-mult{
                 font-size: 16px;
                 padding: 12px 36px;
+                width: 100%;
+                margin-top: 20px;
             }
             p{line-height: 30px;}
             form{
                 span{ color: #e0e1e1; font-size: 12px;}
                 max-width: $rightW;
+                margin-top: 50px;
                 .wtxtPop {
                     color: #9d1d20;
                     font-size: 16px;
@@ -659,6 +662,7 @@ body {
     
     #cadeado{
         padding-left: 30px;
+        margin-left: 270px;
         img{float: left; padding-top: 4px;}
         p{
             padding-left: 7px;
