@@ -48,28 +48,19 @@ angular.module('multiplusApp')
     
     $scope.popup = function(){
         
-        console.log('multiplosPopUp', $cookies.get('multiplosPopUp'));
-        if(!$cookies.get('multiplosPopUp')&& !$scope.popupAlreadyCalled){
-            $uibModal.open({
-                    animation: true,
-                    templateUrl: 'views/modal.html',
-                    controller: 'ModalCtrl'
-        //        ,
-        //            size: 'lg',
-        //            resolve: {
-        //                moldes: function () {
-        //                  return $rootScope.moldes;
-        //                }
-        //            }
-            }).result.then(function (selectedItem) {
-                console.log('selectedItem', selectedItem);
-            }, function () {
-              console.log('Modal dismissed at: ' + new Date());
-                $scope.popupAlreadyCalled = true;
-            });        
-        }
-        
-        console.log("popup");
+//        console.log('multiplosPopUp', $cookies.get('multiplosPopUp'));
+//        if(!$cookies.get('multiplosPopUp')&& !$scope.popupAlreadyCalled){
+//            $uibModal.open({
+//                    animation: true,
+//                    templateUrl: 'views/modal.html',
+//                    controller: 'ModalCtrl'
+//            }).result.then(function (selectedItem) {
+//                console.log('selectedItem', selectedItem);
+//            }, function () {
+//              console.log('Modal dismissed at: ' + new Date());
+//                $scope.popupAlreadyCalled = true;
+//            });        
+//        }
     }
     
     if($location.search().emailSent){

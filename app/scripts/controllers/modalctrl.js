@@ -15,7 +15,6 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
     $scope.warningEmailPop = false;
     
     
-    
     if($location.search().emailSent){
         $scope.sentEmailPop = $location.search().emailSent;
     }
@@ -60,6 +59,10 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
         $scope.warningNomePop = false;
         $scope.warningEmailPop = false;
     };
+    
+    $scope.fbShare = function(){
+        window.open("https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Finvalid.invalid%2F&amp;src=sdkpreparse", '_blank');
+    }
    
    function validForm(){
         angular.element('#formNomePop').removeClass('has-error');
