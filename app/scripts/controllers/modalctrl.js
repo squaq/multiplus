@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibModalInstance, $http, $cookies, $location, $facebook) {
+angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibModalInstance, $http, $cookies, $location) {
     $scope.form = {};
     
     $scope.form.id = "64358";
@@ -13,6 +13,8 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
     $scope.warningPop = false;
     $scope.warningNomePop = false;
     $scope.warningEmailPop = false;
+    
+//    $scope.sentEmailPop = true;
     
     if($location.search().emailSent){
         $scope.sentEmailPop = $location.search().emailSent;
@@ -60,11 +62,10 @@ angular.module('multiplusApp').controller('ModalCtrl', function ($scope, $uibMod
     };
     
     $scope.fbShare = function(){
-        
-        $facebook.ui(
+        FB.ui(
             {method: 'share',
-            href: 'http://multiplosinvestimentos.com.br'}
-        ).then(function(s){console.log('success', s);}, function(e){console.log('error', e);});
+            href: 'http://www.multiplosinvestimentos.com.br'}
+        )
 //        window.open("https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Finvalid.invalid%2F&amp;src=sdkpreparse", '_blank');
     }
    

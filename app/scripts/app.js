@@ -9,10 +9,10 @@
  * Main module of the application.
  */
 angular
-  .module('multiplusApp', ['ui.bootstrap', 'ngCookies', 'ngFacebook'])
-    .config(function($facebookProvider){
+  .module('multiplusApp', ['ui.bootstrap', 'ngCookies'])
+    .config(function(){
 //    $facebookProvide
-    $facebookProvider.setAppId('639703766234930');
+//    $facebookProvider.setAppId('639703766234930');
 //        FB.init({ 
 //          appId: '639703766234930',
 //          status: true, 
