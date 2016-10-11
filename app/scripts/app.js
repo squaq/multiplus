@@ -9,7 +9,19 @@
  * Main module of the application.
  */
 angular
-  .module('multiplusApp', ['ui.bootstrap', 'ngCookies'])
+  .module('multiplusApp', ['ui.bootstrap', 'ngCookies', 'ngFacebook'])
+    .config(function($facebookProvider){
+//    $facebookProvide
+    $facebookProvider.setAppId('639703766234930');
+//        FB.init({ 
+//          appId: '639703766234930',
+//          status: true, 
+//          cookie: true, 
+//          xfbml: true,
+//          version: 'v2.8'
+//        });
+    
+    })
     .run(function(){
     angular.element(document).ready(function(){
         angular.element(".navbar-toggle").on("click", function () {
@@ -17,6 +29,7 @@ angular
 			  });
     })
 })
+
 .service('anchorSmoothScroll', function(){
     
     this.scrollTo = function(eID) {
