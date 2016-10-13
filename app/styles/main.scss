@@ -591,6 +591,9 @@ body {
             }
             p{line-height: 30px;}
             form{
+                #name{
+                    margin-bottom: 10px;
+                }
                 span{ color: #e0e1e1; font-size: 12px;}
                 max-width: $rightW;
                 margin-top: 50px;

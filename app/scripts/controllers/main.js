@@ -46,10 +46,15 @@ angular.module('multiplusApp')
 //      console.log('Modal dismissed at: ' + new Date());
 //    });
     
+    
+//    console.log('$cookies.get(multiplosPopUp)', $cookies.get('multiplosPopUp'), '------ $location.search().emailSent', $location.search());
+    
+//    $cookies.remove('multiplosPopUp');
+    
     $scope.popup = function(){
         
 //        console.log('multiplosPopUp', $cookies.get('multiplosPopUp'));
-        if(!$cookies.get('multiplosPopUp')&& !$scope.popupAlreadyCalled){
+        if(!$cookies.get('multiplosPopUp') && !$scope.popupAlreadyCalled){
             $uibModal.open({
                     animation: true,
                     templateUrl: 'views/modal.html',
@@ -65,7 +70,7 @@ angular.module('multiplusApp')
     
     if($location.search().emailSent){
         $scope.popup();
-        $cookies.put('multiplosPopUp')
+        $cookies.put('multiplosPopUp', 'true')
     }
     
     $scope.submit = function(){
