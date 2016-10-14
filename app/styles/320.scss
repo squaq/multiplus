@@ -69,12 +69,20 @@
     #inicio {
         height: 434px;
         p{
-            font-size: 15px;
+//            font-size: 15px;
+            font-size: 11px;
         }
         
         .title{
             font-size: $ftitlesize;
-            padding-top: 140px;
+//            padding-top: 140px;
+            padding-top: 110px;
+            max-width: 320px;
+        }
+        .btn-mult{    
+            width: 280px;
+            padding: 10px 17px;
+            font-size: 13px;
         }
     }
     
